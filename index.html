@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en-ca">
+<head>
+  <meta charset="utf-8">
+  <title>Website</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Raleway" rel="stylesheet">
+  <link href="common/type.css" rel="stylesheet">
+  <link href="common/grid.css" rel="stylesheet">
+  <link href="common/modules.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="left">
+    <i class="island-2 icon i-64">
+      <img src="images/logo.svg" alt="">
+    </i>
+  </div>
+
+
+  <nav role="navigation" id="nav">
+  <input type="checkbox" class="nav-check" id="nav-check">
+  <label class="hide-custom-input nav-label" for="nav-check">
+    <img class="pad-t-2 nav-open" src="images/nav-icon.svg" alt="Open Navigation">
+    <img class="pad-t-2 nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
+  </label>
+
+
+    <ul class="list-group-inline right push-1-2 island-2 pad-t grid-middle text-center nav">
+      <li class="island-1-4"><a href="#">About</a></li>
+      <li class="island-1-4"><a href="#">Portfolio</a></li>
+      <li class="island-1-4"><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+</header>
+
+<section class="max-lenght">
+  <div class="carousel">
+    <input class="carousel-input" type="radio" name="mammals" id="project1-control" checked>
+    <input class="carousel-input" type="radio" name="mammals" id="project2-control">
+    <input class="carousel-input" type="radio" name="mammals" id="project3-control">
+
+    <div class="carousel-inner relative">
+      <div class="carousel-items">
+        <div class="carousel-item embed embed-golden" id="project1">
+          <img class="embed-item" src="images/image_1.jpg" alt="">
+        </div>
+
+        <div class="carousel-item embed embed-golden" id="project2">
+          <img class="embed-item" src="images/image_2.jpg" alt="">
+        </div>
+
+        <div class="carousel-item embed embed-golden" id="project3">
+          <img class="embed-item" src="images/image_3.jpg" alt="">
+        </div>
+      </div>
+
+      <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+        <li>
+          <label class="carousel-btn icon i-18 ir" for="project1-control">Project1</label>
+        </li>
+        <li>
+          <label class="carousel-btn icon i-18 ir" for="project2-control">Project2</label>
+        </li>
+        <li>
+          <label class="carousel-btn icon i-18 ir" for="project3-control">Project3</label>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+
+</section>
+
+<section class="pad-t">
+  <h2>About</h2>
+</section>
+
+
+</body>
+</html>
