@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>Website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="common/type.css" rel="stylesheet">
   <link href="common/grid.css" rel="stylesheet">
@@ -23,7 +23,7 @@
       <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
         <nav class="text-center">
           <ul class="list-group-inline">
-            <li class="giga island-1-4"><a href="index.html">Portfolio</a></li>
+            <li class="giga island-1-4"><a href="index.html#portfolio">Portfolio</a></li>
             <li class="giga island-1-4"><a href="#footer">Contact</a></li>
             <li class="giga island-1-4"><a href="#about">About</a></li>
           </ul>
@@ -32,46 +32,55 @@
     </div>
   </header>
 
-  <hr class="line1"></hr>
+<main>
+  <h2 class="text-center subtitle pad-t-2  about"><span>Isometric Illustration</span></h2>
+  <figure class="container texthover push-0">
+      <img class="img-flex" src="images/isometric-square.jpg" alt="">
+  </figure>
 
-  <main class="push-2" id="portfolio" role="main">
-    <div class="grid">
-      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-        <figure class="container texthover push-1-4">
-          <a class="" href="isometric.html">
-            <img class="img-flex" src="images/isometric-square.jpg" alt="">
-            <div class="overlay">
-              <div class="text text-center island-1-4">Isometric Illustration</div>
-            </div>
-          </a>
-        </figure>
+  <section class="max-length">
+    <h3 class="text-center push-0 pad-t-2">Sketches</h3>
+
+  <div class="carousel">
+  <input class="carousel-input" type="radio" name="mammals" id="sketch01-control" checked>
+  <input class="carousel-input" type="radio" name="mammals" id="sketch02-control">
+  <input class="carousel-input" type="radio" name="mammals" id="sketch03-control">
+  <input class="carousel-input" type="radio" name="mammals" id="megatherium-control">
+
+  <div class="pad-t-1-2 pad-b-1-2 carousel-inner relative">
+    <div class="carousel-items">
+      <div class="carousel-item embed embed-golden" id="sketch01">
+        <img class="embed-item" src="images/placeholder-square.jpg" alt="">
       </div>
 
-      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-        <figure class="container texthover push-1-4">
-          <a class="" href="">
-            <img class="img-flex" src="images/placeholder-square.jpg" alt="">
-            <div class="overlay">
-              <div class="text text-center island-1-4">HP Engineering Branding</div>
-            </div>
-          </a>
-        </figure>
+      <div class="carousel-item embed embed-golden" id="sketch02">
+        <img class="embed-item" src="images/placeholder-square.jpg" alt="">
       </div>
 
-      <div class="island-1-2 unit xs-1 s-1 m-1-2 l-1-3">
-        <figure class="container texthover push-1-4">
-          <a class="" href="">
-            <img class="img-flex" src="images/placeholder-square.jpg" alt="">
-            <div class="overlay">
-              <div class="text text-center island-1-4">Dog Rescue Website</div>
-            </div>
-          </a>
-        </figure>
+      <div class="carousel-item embed embed-golden" id="sketch03">
+        <img class="embed-item" src="images/placeholder-square.jpg" alt="">
       </div>
 
+      <div class="carousel-item embed embed-golden" id="sketch04">
+        <img class="embed-item" src="images/placeholder-square.jpg" alt="">
+      </div>
     </div>
 
-  </main>
+    <ul class="carousel-controls list-group-inline pin-cb w-1 text-center push-0 island-1-2">
+      <li>
+        <label class="carousel-btn icon i-18 ir" for="sketch01-control">Arsinoitherium</label>
+      </li>
+      <li>
+        <label class="carousel-btn icon i-18 ir" for="sketch02-control">Elasmotherium</label>
+      </li>
+      <li>
+        <label class="carousel-btn icon i-18 ir" for="sketch03-control">Glyptodon</label>
+      </li>
+      <li>
+        <label class="carousel-btn icon i-18 ir" for="sketch04-control">Megatherium</label>
+      </li>
+    </ul>
+  </div>
 
   <footer class="footer" id="footer" role="footer">
 
