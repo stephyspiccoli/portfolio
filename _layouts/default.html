@@ -4,8 +4,10 @@
   <meta charset="utf-8">
   <title>Website</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-<link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
+
   <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/modules.css" rel="stylesheet">
@@ -13,23 +15,28 @@
 </head>
 <body>
 
-  <header role="navigation" class="pad-t-2 text-center" id="nav">
+  <header role="navigation" class="banner push-1 pad-t-2 text-center" id="nav">
+
     <div class="grid">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2">
-        <a href="#nav">
-          <h1 class="">Stephanie Piccoli</h1>
+      <div class="unit xs-1 s-1 m-1 l-1">
+        <a href="{{site.baseurl}}/index/">
+          <h1 class="push-1 tena">Stephanie Piccoli</h1>
         </a>
       </div>
-      <div class="push-1-2 unit xs-1 s-1 m-1-2 l-1-2 gutter-1-2">
+
+      <div class="push-1 unit xs-1 s-1 m-1 l-1">
         <nav class="text-center">
           <ul class="list-group-inline">
-            <li class="giga island-1-4"><a href="{{site.baseurl}}/index/">Portfolio</a></li>
-            <li class="giga island-1-4"><a href="{{site.baseurl}}/#footer">Contact</a></li>
-            <li class="giga island-1-4"><a href="{{site.baseurl}}/#about">About</a></li>
+            <li class="btn btn-banner milli"><a href="{{site.baseurl}}/index/">Portfolio</a></li>
+            <li class="btn btn-banner giga"><a href="{{site.baseurl}}/#footer">Contact</a></li>
+            <li class="btn btn-banner giga "><a href="{{site.baseurl}}/#about">About</a></li>
           </ul>
         </nav>
       </div>
+
     </div>
+
+  </div>
   </header>
 
   <hr class="line1"></hr>
@@ -38,35 +45,47 @@
     {{content}}
   </main>
 
-  <footer class="footer" id="footer" role="footer">
+  <footer class="pad-t-2 footer" id="footer" role="footer">
 
   <section class="about pad-t-1 pad-b-2">
     <h2 class="subtitle lines text-center subtitle about"><span>Get in Touch</span></h2>
       <div class="grid grid-middle island-1-2">
         <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
           <ul class="list-group-inline text-center push-0 pad-t-1-4">
-            <li class="island-1-8">
-              <a class="social-media btn icon-link text-center gutter">
-                <i class="icon i-48 push-1-8">
-                  <img src="images/instagram.svg" alt="">
-                </i>
-                <span class="social icon-label milli block">Instagram</span>
-              </a>
-            </li>
+
             <li class="island-1-8">
               <a class="social-media btn text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="images/placeholder-logo.png" alt="">
+                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
                 </i>
                 <span class="social icon-label milli block">LinkedIn</span>
               </a>
             </li>
+
+            <li class="island-1-8">
+              <a class="social-media btn text-center gutter">
+                <i class="icon i-64 push-1-8">
+                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                </i>
+                <span class="social icon-label milli block">Instagram</span>
+              </a>
+            </li>
+
             <li class="island-1-8">
               <a class="social-media btn icon-link text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="images/placeholder-logo.png" alt="">
+                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
                 </i>
                 <span class="social icon-label milli block">Behance</span>
+              </a>
+            </li>
+
+            <li class="island-1-8">
+              <a class="social-media btn icon-link text-center gutter">
+                <i class="icon i-64 push-1-8">
+                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                </i>
+                <span class="social icon-label milli block">Email</span>
               </a>
             </li>
           </ul>
