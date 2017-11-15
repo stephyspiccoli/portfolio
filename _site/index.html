@@ -8,9 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
 
-  <link href="/common/type.css" rel="stylesheet">
-  <link href="/common/grid.css" rel="stylesheet">
-  <link href="/common/modules.css" rel="stylesheet">
+  <link href="common/type.css" rel="stylesheet">
+  <link href="common/grid.css" rel="stylesheet">
+  <link href="common/modules.css" rel="stylesheet">
   <link href="/css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -19,20 +19,21 @@
 
     <div class="grid">
       <div class="unit xs-1 s-1 m-1 l-1">
-        <a href="/index/">
-          <h1 class="push-1 tena">Stephanie Piccoli</h1>
+        <a href="index.html">
+          <h1 class="push-0 tena">Stephanie Piccoli</h1>
         </a>
       </div>
 
-      <div class="push-1 unit xs-1 s-1 m-1 l-1">
-        <nav class="text-center">
-          <ul class="list-group-inline">
-            <li class="btn btn-banner milli"><a href="/">Portfolio</a></li>
-            <li class="btn btn-banner giga"><a href="/#footer">Contact</a></li>
-            <li class="btn btn-banner giga "><a href="/#about">About</a></li>
-          </ul>
-        </nav>
-      </div>
+      <div class="push-1 gutter-1 unit xs-1 s-1 m-1 l-1">
+  <nav class="text-center">
+    <ul class="list-group-inline">
+      <li class="btn btn-banner island-1-2"><a href="/index.html">Portfolio</a></li>
+      <li class="btn btn-banner island-1-4"><a href="#footer">Contact</a></li>
+      <li class="btn-banner btn island-1-4"><a href="#about">About</a></li>
+    </ul>
+  </nav>
+</div>
+
 
     </div>
 
@@ -42,48 +43,58 @@
   <hr class="line1"></hr>
 
   <main>
-      <main class="push-2 pad-t-2 " id="portfolio" role="main">
+      <main class="push-0 wrapper" id="portfolio" role="main">
     <div class="grid">
-      <div class="unit xs-1 s-1 m-1-2 l-1-3">
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
-          <a class="" href="/isometric/">
-            <img class="img-flex" src="/images/isometric-square.jpg" alt="">
+          <a class="" href="/isometric.html">
+            <img class="img-flex" src="images/isometric-square.jpg" alt="Isometric Illustration">
+            <div class="overlay">
+              <div class="text text-center island-1-4">Isometric Illustration</div>
+            </div>
+          </a>
+        </figure>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-3">
+        <figure class="container texthover push-0">
+          <a class="" href="/hp-engineering.html/">
+            <img class="img-flex" src="images/business-cards.jpg" alt="">
+            <div class="overlay">
+              <div class="text text-center island-1-4">HP Engineering Branding</div>
+            </div>
+          </a>
+        </figure>
+      </div>
+
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-3">
+        <figure class="container texthover push-0">
+          <a class="" href="">
+            <img class="img-flex" src="images/placeholder-square.jpg" alt="">
             <div class="overlay">
               <div class="text text-center island-1-4">View Project</div>
             </div>
           </a>
-          <p class="pad-t-1-2 pad-b-2 text-center">Isometric Illustration</p>
         </figure>
       </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-3">
+      <div class="island-1-4 unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
           <a class="" href="">
-            <img class="img-flex" src="/images/placeholder-square.jpg" alt="">
+            <img class="img-flex" src="images/placeholder-square.jpg" alt="">
             <div class="overlay">
               <div class="text text-center island-1-4">View Project</div>
             </div>
           </a>
-          <p class="pad-t-1-2 pad-b-2 text-center">Hp Engineering Branding</p>
         </figure>
       </div>
 
-      <div class="unit xs-1 s-1 m-1-2 l-1-3">
-        <figure class="container texthover push-0">
-          <a class="" href="">
-            <img class="img-flex" src="/images/placeholder-square.jpg" alt="">
-            <div class="overlay">
-              <div class="text text-center island-1-4">Dog Rescue Website</div>
-            </div>
-          </a>
-        </figure>
-      </div>
     </div>
   </main>
 
     <hr class="line1"></hr>
 
-  <section class="about">
+  <section id="about" class="about">
     <div class="grid">
       <div class=" unit unit-m-centered xs-1 s-1 m-1 l-1-2">
         <figure class="texthover push-0">
@@ -91,8 +102,8 @@
         </figure>
       </div>
       <div class="max-length gutter-1-4 unit unit-m-centered xs-1 s-1 m-1 l-1-2">
-        <h2>Who am I?</h2>
-        <p>My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
+        <h2 class="pad-t-2 about-h2">Who am I?</h2>
+        <p class="p-h2">My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
 
         I’m currently wrapping up my final year in the Graphic Design program at Algonquin College. I’m very passionate about all aspect of design, from traditional graphic design and web to user interface and user experience. I’m always ready to take up new challenges and love pushing myself to the edge of my abilities.<br><br>
 
@@ -105,8 +116,8 @@
 
   <footer class="pad-t-2 footer" id="footer" role="footer">
 
-  <section class="about pad-t-1 pad-b-2">
-    <h2 class="subtitle lines text-center subtitle about"><span>Get in Touch</span></h2>
+  <section class="">
+    <h2 class="subtitle lines text-center subtitle"><span>Get in Touch</span></h2>
       <div class="grid grid-middle island-1-2">
         <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
           <ul class="list-group-inline text-center push-0 pad-t-1-4">

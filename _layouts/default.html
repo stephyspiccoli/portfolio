@@ -8,9 +8,9 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
 
-  <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/common/modules.css" rel="stylesheet">
+  <link href="common/type.css" rel="stylesheet">
+  <link href="common/grid.css" rel="stylesheet">
+  <link href="common/modules.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
 </head>
 <body>
@@ -19,20 +19,12 @@
 
     <div class="grid">
       <div class="unit xs-1 s-1 m-1 l-1">
-        <a href="{{site.baseurl}}/index/">
-          <h1 class="push-1 tena">Stephanie Piccoli</h1>
+        <a href="index.html">
+          <h1 class="push-0 tena">Stephanie Piccoli</h1>
         </a>
       </div>
 
-      <div class="push-1 unit xs-1 s-1 m-1 l-1">
-        <nav class="text-center">
-          <ul class="list-group-inline">
-            <li class="btn btn-banner milli"><a href="{{site.baseurl}}/">Portfolio</a></li>
-            <li class="btn btn-banner giga"><a href="{{site.baseurl}}/#footer">Contact</a></li>
-            <li class="btn btn-banner giga "><a href="{{site.baseurl}}/#about">About</a></li>
-          </ul>
-        </nav>
-      </div>
+      {% include nav.html %}
 
     </div>
 
@@ -47,8 +39,8 @@
 
   <footer class="pad-t-2 footer" id="footer" role="footer">
 
-  <section class="about pad-t-1 pad-b-2">
-    <h2 class="subtitle lines text-center subtitle about"><span>Get in Touch</span></h2>
+  <section class="">
+    <h2 class="subtitle lines text-center subtitle"><span>Get in Touch</span></h2>
       <div class="grid grid-middle island-1-2">
         <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
           <ul class="list-group-inline text-center push-0 pad-t-1-4">
