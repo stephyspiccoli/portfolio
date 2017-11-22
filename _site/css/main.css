@@ -27,19 +27,30 @@ p {
   color: #848484;
 }
 
-nav {
+.current {
+  background-color: #000531;
+  color: #fff;
+}
+
+.nav {
   font-family: 'Quicksand', bold, sans-serif;
 }
 
-nav a {
+.nav {
   display: inline-block;
   text-decoration: none;
   list-style-type: none;
   color: #000;
 }
 
-nav a:hover {
+.nav a:hover {
   color: #000;
+}
+
+.nav-bottom {
+font-size: .8rem;
+margin-bottom: 0;
+margin-bottom: 0;
 }
 
 a {
