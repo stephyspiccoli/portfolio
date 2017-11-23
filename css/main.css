@@ -1,6 +1,7 @@
 h1 {
   font-family: 'Tenor Sans', sans-serif;
   color: #000;
+  margin-left: 0;
 }
 
 h1:hover {
@@ -34,9 +35,6 @@ p {
 
 .nav {
   font-family: 'Quicksand', bold, sans-serif;
-}
-
-.nav {
   display: inline-block;
   text-decoration: none;
   list-style-type: none;
@@ -45,12 +43,6 @@ p {
 
 .nav a:hover {
   color: #000;
-}
-
-.nav-bottom {
-font-size: .8rem;
-margin-bottom: 0;
-margin-bottom: 0;
 }
 
 a {
@@ -64,8 +56,19 @@ a {
   color: #fff;
 }
 
+.picture {
+    background-image: url("../images/nightcity.jpg");
+
+    height: 500px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .about {
-  background-color: #070b23;
+  background-color: transparent;
 }
 
 .line1 {
