@@ -1,6 +1,6 @@
 h1 {
   font-family: 'Tenor Sans', sans-serif;
-  color: #000;
+  color: #fff;
   margin-left: 0;
 }
 
@@ -104,12 +104,12 @@ span {
 .btn-banner {
   background-color: transparent;
   border-color: transparent;
-  color: #000;
+  color: #fff;
 }
 
 .btn-banner:hover {
   background-color: transparent;
-  border-color: #000;
+  border-color: #fff;
   border-radius: 5px;
   border-bottom: transparent;
   border-top: transparent;
