@@ -2,12 +2,12 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Website</title>
+  <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="A portfolio website that displays some of my best graphic design work">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
-
   <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/modules.css" rel="stylesheet">
@@ -36,7 +36,7 @@
             <li class="island-1-8">
               <a class="social-media btn text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                  <img itemprop="image" src="{{site.baseurl}}/images/placeholder-logo.png" alt="LinkedIn logo">
                 </i>
                 <span class="social icon-label milli block">LinkedIn</span>
               </a>
@@ -45,7 +45,7 @@
             <li class="island-1-8">
               <a class="social-media btn text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                  <img itemprop="image" src="{{site.baseurl}}/images/placeholder-logo.png" alt="Instagram Logo">
                 </i>
                 <span class="social icon-label milli block">Instagram</span>
               </a>
@@ -54,7 +54,7 @@
             <li class="island-1-8">
               <a class="social-media btn icon-link text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                  <img itemprop="image" src="{{site.baseurl}}/images/placeholder-logo.png" alt="Behance Logo">
                 </i>
                 <span class="social icon-label milli block">Behance</span>
               </a>
@@ -63,9 +63,9 @@
             <li class="island-1-8">
               <a class="social-media btn icon-link text-center gutter">
                 <i class="icon i-64 push-1-8">
-                  <img src="{{site.baseurl}}/images/placeholder-logo.png" alt="">
+                  <img itemprop="image" src="{{site.baseurl}}/images/placeholder-logo.png" alt="Email Link">
                 </i>
-                <span class="social icon-label milli block">Email</span>
+                <span itemprop="email" class="social icon-label milli block">Email</span>
               </a>
             </li>
           </ul>
@@ -74,7 +74,6 @@
   </section>
 
     <ul class="footerlist-group-inline text-center">
-
       <p class="push-0 micro text-center">Stephanie Piccoli Designs © <i>Portfolio</i></p>
     </ul>
 

@@ -1,0 +1,3 @@
+Sitemap: https://piccolidesign.ca/sitemap.xml
+
+User-agent: *

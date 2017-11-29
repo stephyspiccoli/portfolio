@@ -1,15 +1,16 @@
 ---
 layout: default
+title: "Home"
 ---
 
   <hr class="push-1-2 line1"></hr>
 
-  <main class="push-0 wrapper" id="portfolio" role="main">
+  <main class="push-0 wrapper" id="portfolio" role="main" itemscope itemtype="http://schema.org/CreativeWork">
     <div class="grid">
       <div class="unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
-          <a class="" href="{{site.baseurl}}/isometric/">
-            <img class="img-flex" src="images/isometric-square.jpg" alt="Isometric Illustration">
+          <a itemprop="url" href="{{site.baseurl}}/isometric/">
+            <img itemprop="image" class="img-flex" src="images/isometric-square.jpg" alt="Isometric Illustration">
             <div class="overlay">
               <div class="text text-center island-1-4">Isometric Illustration</div>
             </div>
@@ -19,8 +20,8 @@ layout: default
 
       <div class="unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
-          <a class="" href="{{site.baseurl}}/hp-engineering/">
-            <img class="img-flex" src="images/business-cards-flying.png" alt="">
+          <a itemprop="url" href="{{site.baseurl}}/hp-engineering/">
+            <img itemprop="image" class="img-flex" src="images/business-cards-flying.png" alt="">
             <div class="overlay">
               <div class="text text-center island-1-4">HP Engineering Branding</div>
             </div>
@@ -30,8 +31,8 @@ layout: default
 
       <div class="unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
-          <a class="" href="">
-            <img class="img-flex" src="images/cheo-front-page.jpg" alt="">
+          <a itemprop="url" href="">
+            <img itemprop="image" class="img-flex" src="images/cheo-front-page.jpg" alt="">
             <div class="overlay">
               <div class="text text-center island-1-4">Cheo Annual Report</div>
             </div>
@@ -41,8 +42,8 @@ layout: default
 
       <div class="unit xs-1 s-1 m-1-2 l-1-3">
         <figure class="container texthover push-0">
-          <a class="" href="">
-            <img class="img-flex" src="images/placeholder-square.jpg" alt="">
+          <a itemprop="url" href="">
+            <img itemprop="image" class="img-flex" src="images/placeholder-square.jpg" alt="">
             <div class="overlay">
               <div class="text text-center island-1-4">View Project</div>
             </div>
@@ -55,32 +56,4 @@ layout: default
 
     <hr class="line1"></hr>
 
-  <section>
-    <div class="picture absolute"></div>
-    <div class="about relative">
-      <h2 class="">Who am I?</h2>
-      <p class="">My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
-
-      I’m currently wrapping up my final year in the Graphic Design program at Algonquin College. I’m very passionate about all aspect of design, from traditional graphic design and web to user interface and user experience. I’m always ready to take up new challenges and love pushing myself to the edge of my abilities.<br><br>
-
-      I was born and raised in Brazil and spend much of my younger days by the sea. This has heavily inspired my obsession with creating designs that are clean and minimalist in nature, all the while being functional and setting the client apart from their competition.</p>
-    </div>
-  </section>
-
-  <section id="about" class="about">
-    <div class="grid">
-      <div class=" unit unit-m-centered xs-1 s-1 m-1 l-1-2">
-        <figure class="texthover push-0">
-            <img class="island-2 img-flex me" src="{{site.baseurl}}/images/me.jpg" alt="">
-        </figure>
-      </div>
-      <div class="max-length gutter-1-4 unit unit-m-centered xs-1 s-1 m-1 l-1-2">
-        <h2 class="pad-t-2 about-h2">Who am I?</h2>
-        <p class="p-h2">My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
-
-        I’m currently wrapping up my final year in the Graphic Design program at Algonquin College. I’m very passionate about all aspect of design, from traditional graphic design and web to user interface and user experience. I’m always ready to take up new challenges and love pushing myself to the edge of my abilities.<br><br>
-
-        I was born and raised in Brazil and spend much of my younger days by the sea. This has heavily inspired my obsession with creating designs that are clean and minimalist in nature, all the while being functional and setting the client apart from their competition.</p>
-      </div>
-    </div>
-  </section>
+      {% include about.html %}
