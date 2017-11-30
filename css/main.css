@@ -33,6 +33,32 @@ p {
   color: #fff;
 }
 
+header {
+  position: relative;
+  text-align: center;
+}
+
+.nav {
+  list-style-type: none;
+  background-color: #ccc;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 30%;
+  width: 100%;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
+  color: #000;
+}
+
+.nav a:hover {
+  color: #fff;
+}
+
 .nav {
   margin: 0;
   padding: 0;
@@ -46,13 +72,14 @@ p {
 }
 
 .nav a {
-  text-decoration: none;
   display: block;
   padding: 0.5em;
+  text-decoration: none;
   color: #000;
 }
 
 .nav a:hover {
+  background-color: #333;
   color: #fff;
 }
 
@@ -70,6 +97,8 @@ p {
   font-size: 1.25rem;
   display: inline-block;
   width: 40px;
+  right: 0;
+  bottom: 0;
 }
 
 .nav-open,
@@ -79,7 +108,7 @@ p {
 }
 
 .nav-check:checked ~ .nav-label {
-  background-color: grey;
+  background-color: #ccc;
 }
 
 .nav-close {
@@ -93,6 +122,7 @@ p {
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
 }
+
 
 a {
   font-family: 'Quicksand', bold, sans-serif;
@@ -262,4 +292,17 @@ span {
 #sketch03-control:checked ~ .carousel-inner [for="sketch03-control"],
 #sketch04-control:checked ~ .carousel-inner [for="sketch04-control"] {
   background-color: #fff;
+}
+
+@media only screen and (min-width: 38em) {
+
+
+  .nav {
+    display: block;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
 }
