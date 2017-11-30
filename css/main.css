@@ -34,21 +34,70 @@ p {
 }
 
 .nav {
-  font-family: 'Quicksand', bold, sans-serif;
-  display: inline-block;
-  text-decoration: none;
+  margin: 0;
+  padding: 0;
   list-style-type: none;
+  background-color: #ccc;
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 100%;
+  width: 15em;
+}
+
+.nav a {
+  text-decoration: none;
+  display: block;
+  padding: 0.5em;
   color: #000;
 }
 
 .nav a:hover {
-  color: #000;
+  color: #fff;
+}
+
+.nav-check {
+  position: absolute;
+  top: -3em;
+}
+
+.nav-check:checked ~ .nav {
+  display: block;
+}
+
+.nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
+  display: inline-block;
+  width: 40px;
+}
+
+.nav-open,
+.nav-close {
+  display: block;
+  width: 100%;
+}
+
+.nav-check:checked ~ .nav-label {
+  background-color: grey;
+}
+
+.nav-close {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-open {
+  display: none;
+}
+
+.nav-check:checked ~ .nav-label .nav-close {
+  display: block;
 }
 
 a {
   font-family: 'Quicksand', bold, sans-serif;
   text-decoration: none;
-  color: #000;
+  color: #fff;
 }
 
 .current {
