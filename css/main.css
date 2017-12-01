@@ -40,11 +40,9 @@ header {
 
 .nav {
   list-style-type: none;
-  background-color: #ccc;
   display: none;
   position: absolute;
   right: 0;
-  top: 30%;
   width: 100%;
 }
 
@@ -52,36 +50,13 @@ header {
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  color: #000;
+  color: #fff;
 }
 
 .nav a:hover {
   color: #fff;
 }
 
-.nav {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  background-color: #ccc;
-  display: none;
-  position: absolute;
-  right: 0;
-  top: 100%;
-  width: 15em;
-}
-
-.nav a {
-  display: block;
-  padding: 0.5em;
-  text-decoration: none;
-  color: #000;
-}
-
-.nav a:hover {
-  background-color: #333;
-  color: #fff;
-}
 
 .nav-check {
   position: absolute;
@@ -90,25 +65,23 @@ header {
 
 .nav-check:checked ~ .nav {
   display: block;
+top: 3em;
 }
 
 .nav-label {
   cursor: pointer;
   font-size: 1.25rem;
   display: inline-block;
-  width: 40px;
-  right: 0;
-  bottom: 0;
+  width: 25px;
+    position: absolute;
+    right: 1em;
+    top: .5em;
 }
 
 .nav-open,
 .nav-close {
   display: block;
   width: 100%;
-}
-
-.nav-check:checked ~ .nav-label {
-  background-color: #ccc;
 }
 
 .nav-close {
@@ -122,7 +95,6 @@ header {
 .nav-check:checked ~ .nav-label .nav-close {
   display: block;
 }
-
 
 a {
   font-family: 'Quicksand', bold, sans-serif;
@@ -294,15 +266,19 @@ span {
   background-color: #fff;
 }
 
-@media only screen and (min-width: 38em) {
+@media only screen and (min-width: 60em) {
 
-
-  .nav {
-    display: block;
+  h1 {
+    float: center;
   }
 
-  .nav-label {
+  label.nav-label {
     display: none;
+  }
+
+  .nav {
+    position: static;
+    display: block;
   }
 
 }
