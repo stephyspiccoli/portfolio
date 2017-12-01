@@ -5,9 +5,8 @@
   <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
+  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Tenor+Sans" rel="stylesheet">
   <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/modules.css" rel="stylesheet">
@@ -15,13 +14,15 @@
 </head>
 <body>
 
-      {% include nav.html %}
+  <header role="navigation" id="nav">
+    {% include nav.html %}
+  </header>
 
   <main class="pad-t-1-2">
     {{content}}
   </main>
 
-  <footer class="pad-t-2 footer" id="footer" role="footer">
+  <footer class="picture-footer pad-t-2 footer" id="footer" role="footer">
 
   <section class="push-2">
     <h2 class="subtitle lines text-center subtitle"><span>Get in Touch</span></h2>

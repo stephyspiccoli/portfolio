@@ -1,11 +1,10 @@
 h1 {
-  font-family: 'Tenor Sans', sans-serif;
-  color: #fff;
+  font-family: 'Arizonia', sans-serif;
+  color: #000;
   margin-left: 0;
 }
 
 h1:hover {
-  color: #848484;
   transition: all .4s linear;
 }
 
@@ -50,11 +49,11 @@ header {
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  color: #fff;
+  color: #000;
 }
 
 .nav a:hover {
-  color: #fff;
+  color: #00b3c5;
 }
 
 
@@ -108,14 +107,40 @@ a {
 }
 
 .picture {
-    background-image: url("../images/nightcity.jpg");
+    background-image: url("../images/boat.jpg");
 
-    height: 500px;
+    height: 800px;
 
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.picture-2 {
+  background-image: url("../images/colour.jpeg");
+
+  height: 700px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-footer {
+  background-image: url("../images/ocean.jpeg");
+
+  height: 700px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-isometric {
+  display: none;
 }
 
 .about {
@@ -133,10 +158,6 @@ a {
 span {
   font-family: 'Quicksand', bold, sans-serif;
   border-color: transparent;
-}
-
-.me {
-  border-radius: 50%;
 }
 
 .banner {
@@ -160,7 +181,7 @@ span {
 
 .btn-banner:hover {
   background-color: transparent;
-  border-color: #fff;
+  border-color: #00b3c5;
   border-radius: 5px;
   border-bottom: transparent;
   border-top: transparent;
@@ -266,7 +287,7 @@ span {
   background-color: #fff;
 }
 
-@media only screen and (min-width: 60em) {
+@media only screen and (min-width: 38em) {
 
   h1 {
     float: center;
