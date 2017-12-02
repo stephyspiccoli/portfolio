@@ -14,7 +14,7 @@ h1:hover {
 }
 
 h2 {
-  font-family: 'Great Vibes', cursive;
+  font-family: 'Quicksand', bold, sans-serif;
   color: #848484;
 }
 
@@ -127,17 +127,6 @@ a {
   background-size: cover;
 }
 
-.picture-2 {
-  background-image: url("../images/colour.jpeg");
-
-  height: 900px;
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
 .picture-footer {
   background-image: url("../images/colour.jpeg");
 
@@ -149,10 +138,34 @@ a {
   background-size: cover;
 }
 
-.picture-isometric {
-  background-color: #ccc;
-  background-image: none;
+.picture-aboutme {
+  background-image: url("../images/lake.jpg");
+
   height: 200px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-aboutme-footer {
+  background-image: url("../images/lake.jpg");
+
+  height: 400px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picture-engineering {
+  background-image: url("../images/lake.jpeg");
+
+  height: 200px;
+
+background-color: #ccc;
 }
 
 .about {
@@ -315,6 +328,10 @@ footer {
 
 .footer-p {
   color: #fff;
+}
+
+.footer-2-p {
+  color: #000;
 }
 
 @media only screen and (min-width: 38em) {
