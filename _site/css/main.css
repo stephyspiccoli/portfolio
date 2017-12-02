@@ -14,7 +14,7 @@ h1:hover {
 }
 
 h2 {
-  font-family: 'Quicksand', bold, sans-serif;
+  font-family: 'Great Vibes', cursive;
   color: #848484;
 }
 
@@ -127,10 +127,6 @@ a {
   background-size: cover;
 }
 
-.me {
-}
-
-
 .picture-2 {
   background-image: url("../images/colour.jpeg");
 
@@ -145,7 +141,7 @@ a {
 .picture-footer {
   background-image: url("../images/colour.jpeg");
 
-  height: 300px;
+  height: 400px;
 
   background-attachment: fixed;
   background-position: center;
@@ -193,6 +189,7 @@ span {
   background-size: 90px;
 }
 
+
 .btn-banner {
   background-color: transparent;
   border-color: transparent;
@@ -208,16 +205,17 @@ span {
   transition: all .5s linear;
 }
 
-.social-media {
-  color: #000;
+.btn {
+  color: #fff;
   transition-duration: .25s;
   transition-timing-function: linear;
   border-color: transparent;
+  background-color: transparent;
 }
 
-.social-media:hover {
+.btn-social:hover {
   background-color: transparent;
-  color: #848484;
+  color: #fff;
   border-color: transparent;
 }
 
@@ -270,6 +268,10 @@ span {
   background-color: #000;
 }
 
+.subtitle-get {
+  color: #fff;
+}
+
 .container:hover .overlay {
   opacity: 0.80;
 }
@@ -305,6 +307,14 @@ span {
 #sketch03-control:checked ~ .carousel-inner [for="sketch03-control"],
 #sketch04-control:checked ~ .carousel-inner [for="sketch04-control"] {
   background-color: #fff;
+}
+
+footer {
+  vertical-align: middle;
+}
+
+.footer-p {
+  color: #fff;
 }
 
 @media only screen and (min-width: 38em) {
