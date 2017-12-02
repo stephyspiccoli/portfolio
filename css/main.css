@@ -1,7 +1,12 @@
+body {
+  margin: 0;
+}
+
 h1 {
-  font-family: 'Arizonia', sans-serif;
-  color: #000;
-  margin-left: 0;
+  font-family: 'Great Vibes', cursive;
+  color: #fff;
+  font-size: 2em;
+  margin-top: 1em;
 }
 
 h1:hover {
@@ -24,7 +29,7 @@ h3 {
 
 p {
   font-family: 'Quicksand', sans-serif;
-  color: #848484;
+  color: #ccc;
 }
 
 .current {
@@ -37,23 +42,28 @@ header {
   text-align: center;
 }
 
+.header {
+  background-color: #fff;
+}
+
 .nav {
   list-style-type: none;
   display: none;
   position: absolute;
   right: 0;
   width: 100%;
+
 }
 
 .nav a {
   text-decoration: none;
   display: block;
   padding: 0.5em;
-  color: #000;
+  color: #fff;
 }
 
 .nav a:hover {
-  color: #00b3c5;
+  color: #fff;
 }
 
 
@@ -64,7 +74,7 @@ header {
 
 .nav-check:checked ~ .nav {
   display: block;
-top: 3em;
+  top: 6em;
 }
 
 .nav-label {
@@ -72,9 +82,9 @@ top: 3em;
   font-size: 1.25rem;
   display: inline-block;
   width: 25px;
-    position: absolute;
-    right: 1em;
-    top: .5em;
+  position: absolute;
+  right: 1em;
+  top: 2em;
 }
 
 .nav-open,
@@ -107,20 +117,24 @@ a {
 }
 
 .picture {
-    background-image: url("../images/boat.jpg");
+  background-image: url("../images/colour.jpeg");
 
-    height: 800px;
+  height: 200px;
 
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
+.me {
+}
+
 
 .picture-2 {
   background-image: url("../images/colour.jpeg");
 
-  height: 700px;
+  height: 900px;
 
   background-attachment: fixed;
   background-position: center;
@@ -129,9 +143,9 @@ a {
 }
 
 .picture-footer {
-  background-image: url("../images/ocean.jpeg");
+  background-image: url("../images/colour.jpeg");
 
-  height: 700px;
+  height: 300px;
 
   background-attachment: fixed;
   background-position: center;
@@ -140,17 +154,23 @@ a {
 }
 
 .picture-isometric {
-  display: none;
+  background-color: #ccc;
+  background-image: none;
+  height: 200px;
 }
 
 .about {
   background-color: transparent;
 }
 
+.aboutme-p {
+  vertical-align: middle;
+}
+
 .line1 {
   height: 10px;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
   top: 3px;
   line-height: 0.5;
 }
@@ -181,7 +201,7 @@ span {
 
 .btn-banner:hover {
   background-color: transparent;
-  border-color: #00b3c5;
+  border-color: #fff;
   border-radius: 5px;
   border-bottom: transparent;
   border-top: transparent;

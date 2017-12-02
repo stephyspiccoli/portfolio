@@ -5,7 +5,7 @@
   <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
-  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
@@ -14,18 +14,18 @@
 </head>
 <body>
 
-  <header role="navigation" id="nav">
+  <header class="push-1-4 picture {{page.headerClass}}" role="navigation" id="nav">
     {% include nav.html %}
   </header>
 
-  <main class="pad-t-1-2">
+  <main class="pad-t-1-4">
     {{content}}
   </main>
 
-  <footer class="picture-footer pad-t-2 footer" id="footer" role="footer">
+  <footer class="pad-t-2 picture-footer footer" id="footer" role="footer">
 
-  <section class="push-2">
-    <h2 class="subtitle lines text-center subtitle"><span>Get in Touch</span></h2>
+  <section class="push-0">
+    <h2 class="text-center subtitle"><span>Get in Touch</span></h2>
       <div class="grid grid-middle island-1-2">
         <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
           <ul class="list-group-inline text-center push-0 pad-t-1-4">
@@ -68,11 +68,11 @@
           </ul>
         </div>
       </div>
-  </section>
 
-    <ul class="footerlist-group-inline text-center">
-      <p class="push-0 micro text-center">Stephanie Piccoli Designs © <i>Portfolio</i></p>
-    </ul>
+      <ul class="footerlist-group-inline text-center">
+        <p class="push-0 micro text-center">Stephanie Piccoli Designs © <i>Portfolio</i></p>
+      </ul>
+  </section>
 
   </footer>
 

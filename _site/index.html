@@ -5,7 +5,7 @@
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
-  <link href="https://fonts.googleapis.com/css?family=Arizonia" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="/common/type.css" rel="stylesheet">
   <link href="/common/grid.css" rel="stylesheet">
@@ -14,8 +14,8 @@
 </head>
 <body>
 
-  <header role="navigation" id="nav">
-    <div class="class="picture " text-center pad-t-1-2">
+  <header class="push-1-4 picture " role="navigation" id="nav">
+    <div class="text-center pad-t-1-2">
   <a href="/">
     <h1 class="push-0 tena">Stephanie Piccoli</h1>
   </a>
@@ -23,8 +23,8 @@
   <nav class="text-center pad-t-1-4">
     <input type="checkbox" class="nav-check" id="nav-check">
     <label class="nav-label hide-custom-input" for="nav-check">
-      <img class="open nav-open" src="images/nav-icon.svg" alt="Open Navigation">
-      <img class="close nav-close" src="images/nav-icon-close.svg" alt="Close Navigation">
+      <img class="open nav-open" src="/images/nav-icon.svg" alt="Open Navigation">
+      <img class="close nav-close" src="/images/nav-icon-close.svg" alt="Close Navigation">
     </label>
     <ul class="nav list-group-inline">
       <li><a class="btn btn-banner island-1-2" href="/#portfolio">Portfolio</a></li>
@@ -35,7 +35,7 @@
 
   </header>
 
-  <main class="pad-t-1-2">
+  <main class="pad-t-1-4">
       <hr class="push-1-2 line1"></hr>
 
   <main class="push-1-2 wrapper" id="portfolio" role="main" itemscope itemtype="http://schema.org/CreativeWork">
@@ -89,31 +89,38 @@
 
     <hr class="line1"></hr>
 
-      <section id="about" class="picture-2 about">
+      <section id="about" class="about">
+
+  <h2 class="push-0 pad-t-1-2 text-center">Who am I?</h2>
+
   <div class="grid">
-    <div class=" unit unit-m-centered xs-1 s-1 m-1 l-1-2">
-      <figure class="texthover push-0">
-          <img itemprop="image"class="island-2 img-flex me" src="/images/me.jpg" alt="">
-      </figure>
-    </div>
-    <div class="max-length gutter-1-4 unit unit-m-centered xs-1 s-1 m-1 l-1-2">
-      <h2 class="pad-t-2 about-h2">Who am I?</h2>
-      <p class="p-h2">My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
-
-      I’m currently wrapping up my final year in the Graphic Design program at Algonquin College. I’m very passionate about all aspect of design, from traditional graphic design and web to user interface and user experience. I’m always ready to take up new challenges and love pushing myself to the edge of my abilities.<br><br>
-
-      I was born and raised in Brazil and spend much of my younger days by the sea. This has heavily inspired my obsession with creating designs that are clean and minimalist in nature, all the while being functional and setting the client apart from their competition.</p>
-    </div>
+  <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+  <div class="gutter-1-4">
+    <figure class="embed embed-1by1 texthover push-0">
+        <img class="embed-item island-1-2 img-flex me" src="/images/me.jpg" alt="">
+    </figure>
   </div>
+  </div>
+  <div class="unit xs-1 s-1 m-1 l-1-2 xl-1-2">
+    <p class="push-0 island-1-2 max-length text-center aboutme-p">My name is Stephanie Piccoli, Graphic Designer extraordinaire!<br><br>
+
+    I’m currently wrapping up my final year in the Graphic Design program at Algonquin College. I’m very passionate about all aspect of design, from traditional graphic design and web to user interface and user experience. I’m always ready to take up new challenges and love pushing myself to the edge of my abilities.<br><br>
+
+    I was born and raised in Brazil and spend much of my younger days by the sea. This has heavily inspired my obsession with creating designs that are clean and minimalist in nature, all the while being functional and setting the client apart from their competition.</p>
+  </div>
+
+</div>
+</div>
+
 </section>
 
 
   </main>
 
-  <footer class="picture-footer pad-t-2 footer" id="footer" role="footer">
+  <footer class="pad-t-2 picture-footer footer" id="footer" role="footer">
 
-  <section class="push-2">
-    <h2 class="subtitle lines text-center subtitle"><span>Get in Touch</span></h2>
+  <section class="push-0">
+    <h2 class="text-center subtitle"><span>Get in Touch</span></h2>
       <div class="grid grid-middle island-1-2">
         <div class="unit xs-1 s-1 m-1 l-1-4 xl-1-4">
           <ul class="list-group-inline text-center push-0 pad-t-1-4">
@@ -156,11 +163,11 @@
           </ul>
         </div>
       </div>
-  </section>
 
-    <ul class="footerlist-group-inline text-center">
-      <p class="push-0 micro text-center">Stephanie Piccoli Designs © <i>Portfolio</i></p>
-    </ul>
+      <ul class="footerlist-group-inline text-center">
+        <p class="push-0 micro text-center">Stephanie Piccoli Designs © <i>Portfolio</i></p>
+      </ul>
+  </section>
 
   </footer>
 
