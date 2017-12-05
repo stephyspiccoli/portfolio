@@ -32,6 +32,11 @@ p {
   color: #ccc;
 }
 
+figcaption {
+  font-style: italic;
+  color: #ccc;
+}
+
 .current {
   background-color: #000531;
   color: #fff;
@@ -290,6 +295,11 @@ footer {
   border-top:1px solid #ccc;
 }
 
+.shrink {
+  transition: all 250ms linear 100ms;
+}
+
+
 @media only screen and (min-width: 25em) {
 
   h1 {
@@ -320,3 +330,20 @@ footer {
   }
 
 }
+
+.sm-section-intro-image-ideation {
+    background-image: url(../images/sparmetric/intro-ideation.jpg);
+}
+
+.js-sm-section-intro-image-animate {
+    height: 100%;
+    width: 100%;
+}
+
+.sm-section-intro-image {
+    height: 125%;
+    width: 125%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    transition: all 10s ease;
