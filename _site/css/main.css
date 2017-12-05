@@ -290,6 +290,15 @@ footer {
   border-top:1px solid #ccc;
 }
 
+@media only screen and (min-width: 25em) {
+
+  h1 {
+    text-align: left;
+    margin-left: 1em;
+  }
+
+}
+
 @media only screen and (min-width: 38em) {
 
   h1 {
@@ -303,6 +312,11 @@ footer {
   .nav {
     position: static;
     display: block;
+  }
+
+  h1 {
+    text-align: center;
+    margin-left: 0;
   }
 
 }
