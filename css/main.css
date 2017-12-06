@@ -122,7 +122,7 @@ a {
 }
 
 .picture {
-  background-image: url("../images/texture.jpg");
+  background-image: url("{{site.baseurl}}/../images/texture.jpg");
 
   height: 200px;
 
@@ -133,7 +133,7 @@ a {
 }
 
 .picture-footer {
-  background-image: url("../images/colour.jpeg");
+  background-image: url("{{site.baseurl}}/../images/colour.jpeg");
 
   background-attachment: fixed;
   background-position: center;
@@ -142,7 +142,7 @@ a {
 }
 
 .picture-engineering {
-  background-image: url("../images/lake.jpeg");
+  background-image: url("{{site.baseurl}}/../images/lake.jpeg");
 
   height: 200px;
 
