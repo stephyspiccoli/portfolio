@@ -122,7 +122,7 @@ a {
 }
 
 .picture {
-  background-image: url("../images/colour.jpeg");
+  background-image: url("../images/texture.jpg");
 
   height: 200px;
 
@@ -147,6 +147,11 @@ a {
   height: 200px;
 
 background-color: #ccc;
+}
+
+.me {
+  width: 80%;
+  display: block;
 }
 
 .about {
@@ -295,10 +300,23 @@ footer {
   border-top:1px solid #ccc;
 }
 
-.shrink {
-  transition: all 250ms linear 100ms;
+.frame {
+  height: 400px;
+  width: 400px;
+  overflow: hidden;
 }
-
+.zoomout img {
+  height: 400px;
+  width: 400px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+.zoomout img:hover {
+  width: 500px;
+  height: 500px;
+}
 
 @media only screen and (min-width: 25em) {
 
@@ -329,21 +347,16 @@ footer {
     margin-left: 0;
   }
 
+  .me {
+    width: 40%;
+  }
+
 }
 
-.sm-section-intro-image-ideation {
-    background-image: url(../images/sparmetric/intro-ideation.jpg);
-}
+@media only screen and (min-width: 60em) {
 
-.js-sm-section-intro-image-animate {
-    height: 100%;
-    width: 100%;
-}
+  .me {
+    width: 70%;
+  }
 
-.sm-section-intro-image {
-    height: 125%;
-    width: 125%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    transition: all 10s ease;
+}
