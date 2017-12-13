@@ -117,10 +117,6 @@ a {
   color: #fff;
 }
 
-.banner-content {
-  background-color: rgba(122, 122, 122, 0.5);
-}
-
 .current {
   background-color: #000;
   color: #fff;
@@ -296,6 +292,10 @@ footer {
     margin-left: 1em;
   }
 
+  .nav {
+    background-color: #fff;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -309,7 +309,7 @@ footer {
   }
 
   .nav {
-    position: static;
+    position: fixed;
     display: block;
   }
 
@@ -333,10 +333,9 @@ footer {
   }
 
   .banner-content {
-    position: absolute;
-    width: 50%;
+    width: 100%;
     top: 10em;
-      background-color: rgba(122, 122, 122, 0.6);
+    background-color: #fff;
   }
 
 }
@@ -350,14 +349,13 @@ footer {
   .banner {
     position: relative;
     max-height: 500px;
-    overflow: hidden;
   }
 
   .banner-content {
     position: absolute;
     width: 50%;
     top: 10em;
-      background-color: rgba(122, 122, 122, 0.6);
+    background-color: rgba(122, 122, 122, 0.6);
   }
 
 }
