@@ -1,0 +1,14 @@
+<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='150' height='75'>
+	<defs>
+		<g id='lines'>
+			<line x1='0' y1='0' x2='30' y2='37.5' stroke-width='1' stroke='#c7dcdd'/>
+			<line x1='22.5' y1='0' x2='52.5' y2='37.5' stroke-width='1' stroke='#e8ebe0'/>
+			<line x1='45' y1='0' x2='75' y2='37.5' stroke-width='1' stroke='#c7dcdd'/>
+		</g>
+	</defs>
+	<rect x='-10%' y='-10%' width='120%' height='120%' fill='#fff'/>
+	<use xlink:href='#lines' x='75' y='37.5' />
+	<use xlink:href='#lines' x='75' y='-37.5' transform='matrix(1 0 0 -1 0 0)'/>
+	<use xlink:href='#lines'  />
+	<use xlink:href='#lines' x='0' y='-75' transform='matrix(1 0 0 -1 0 0)'/>  
+</svg>

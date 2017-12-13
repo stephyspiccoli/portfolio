@@ -14,9 +14,25 @@
 </head>
 <body>
 
-  <header class="push-1-4 picture" role="navigation" id="nav">
+  <header class="push-1-4" role="navigation" id="nav">
     {% include nav.html %}
   </header>
+
+  {% if page.url == "/" %}
+  <section class="banner picture-banner" id="code">
+    <div>
+      <img class="img-flex" src="{{site.baseurl}}/../images/pattern.png" alt="">
+    </div>
+    <div class="text-center banner-square banner-content">
+      <div class="wrapper">
+        <h2 class="pad-t-1-2">Graphic Design</h2>
+        <div>
+          <a class="btn" href="#">View Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+{% endif %}
 
   <main class="pad-t-1-4">
     {{content}}
