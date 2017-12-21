@@ -60,12 +60,14 @@ header {
   position: absolute;
   right: 0;
   width: 100%;
+}
 
+li {
+  display: inline-block;
 }
 
 .nav a {
   text-decoration: none;
-  display: inline-block;
   padding: 0.5em;
   color: #0a0e29;
 }
@@ -79,10 +81,9 @@ header {
 }
 
 .nav-check:checked ~ .nav {
-  display: inline-block;
+  display: block;
   background-color: #ccc;
   z-index: 90;
-  position: fixed;
   top: 0;
   height: 100vh;
 }
@@ -93,23 +94,23 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: inline-block;
+  display: block;
 }
 
 
 .nav-label {
   cursor: pointer;
   font-size: 1.25rem;
-  display: inline-block;
+  display: block;
+  position: absolute;
   width: 25px;
-  position: fixed;
   right: 1em;
   z-index: 2000;
 }
 
 .nav-open,
 .nav-close {
-  display: inline-block;
+  display: block;
   width: 100%;
 }
 
@@ -140,8 +141,6 @@ a {
 .banner {
   border-color: #ccc;
   background-color: rgba(0, 0, 0, 0.6);
-  margin-left: auto;
-  margin-right: auto;
   width: 50%;
 }
 
@@ -157,7 +156,7 @@ a {
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 800px;
+  height: 100vh;
 }
 
 .picture-footer {
@@ -344,7 +343,7 @@ footer {
 
   .nav {
     position: static;
-    display: block;
+    display: inline-block;
   }
 
   .me {
@@ -361,6 +360,10 @@ footer {
 
   .me {
     width: 70%;
+  }
+
+  .nav-links li {
+    display: inline-block;
   }
 
 }
