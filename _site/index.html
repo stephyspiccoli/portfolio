@@ -5,48 +5,43 @@
   <title>Home</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-  <link href="/common/type.css" rel="stylesheet">
-  <link href="/common/grid.css" rel="stylesheet">
-  <link href="/common/modules.css" rel="stylesheet">
-  <link href="/css/main.css" rel="stylesheet">
+  <link href="/css/site.css" rel="stylesheet">
 </head>
 <body>
 
   <header class="push-1-4" role="navigation" id="nav">
-    <div class="pad-t-1-4">
-  <a href="/">
-    <h1 class="push-0 tenakilo">Stephanie Piccoli</h1>
-  </a>
+          <div class="">
+    <nav class="text-center pad-t-1-4">
+        <div class="pad-t-1-4">
+          <a href="/">
+            <div class="ltext-center">
+              <img class="logo" src="/../images/me-logo.svg" alt="">
+            </div>
+          </a>
+        </div>
+      <input type="checkbox" class="nav-check" id="nav-check">
+      <label class="nav-label hide-custom-input" for="nav-check">
+        <img class="open nav-open" src="/images/nav-icon.svg" alt="Open Navigation">
+        <img class="close nav-close" src="/images/nav-icon-close.svg" alt="Close Navigation">
+      </label>
+      <ul class="nav">
+        <div class="nav-links">
+          <li><a class="btn btn-banner island-1-2" href="/#portfolio">Portfolio</a></li>
+          <li><a class="btn btn-banner island-1-2" href="/#about">About</a></li>
+          <li><a class="btn btn-banner island-1-2" href="/#footer">Contact</a></li>
+        </div>
+      </ul>
+    </nav>
 </div>
-  <nav class="text-center pad-t-1-4">
-    <input type="checkbox" class="nav-check" id="nav-check">
-    <label class="nav-label hide-custom-input" for="nav-check">
-      <img class="open nav-open" src="/images/nav-icon.svg" alt="Open Navigation">
-      <img class="close nav-close" src="/images/nav-icon-close.svg" alt="Close Navigation">
-    </label>
-    <ul class="nav list-group-inline">
-      <li><a class="btn btn-banner island-1-2" href="/#portfolio">Portfolio</a></li>
-      <li><a class="btn btn-banner island-1-2" href="/#about">About</a></li>
-      <li><a class="btn btn-banner island-1-2" href="/#footer">Contact</a></li>
-    </ul>
-  </nav>
 
   </header>
 
   
-  <section class="banner picture-banner" id="code">
-    <div>
-      <img class="img-flex" src="/../images/pattern.png" alt="">
-    </div>
-    <div class="text-center banner-square banner-content">
-      <div class="wrapper">
-        <h2 class="pad-t-1-2">Graphic Design</h2>
-        <div>
-          <a class="btn" href="#">View Work</a>
-        </div>
-      </div>
+  <section class="banner ">
+    <div class="text-center banner-content">
+      <h2 class="pad-t-1-2">Graphic Design</h2>
+      <p>Take a walk through my work</p>
     </div>
   </section>
 

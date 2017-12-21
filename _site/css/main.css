@@ -2,13 +2,6 @@ body {
   margin: 0;
 }
 
-h1 {
-  font-family: 'Great Vibes', cursive;
-  color: #0a0e29;
-  font-size: 2.5em;
-  margin-top: 1em;
-}
-
 h1:hover {
   transition: all .4s linear;
   color: #6a9a9e;
@@ -52,6 +45,15 @@ header {
   background-color: #fff;
 }
 
+.logo {
+  width: 40%;
+}
+
+.nav {
+  border-top: #000 1px solid;
+  border-bottom: #000 1px solid;
+}
+
 .nav {
   list-style-type: none;
   display: none;
@@ -63,7 +65,7 @@ header {
 
 .nav a {
   text-decoration: none;
-  display: block;
+  display: inline-block;
   padding: 0.5em;
   color: #0a0e29;
 }
@@ -72,30 +74,42 @@ header {
   color: #6a9a9e;
 }
 
-
 .nav-check {
   position: absolute;
-  top: -3em;
 }
 
 .nav-check:checked ~ .nav {
-  display: block;
-  top: 6em;
+  display: inline-block;
+  background-color: #ccc;
+  z-index: 90;
+  position: fixed;
+  top: 0;
+  height: 100vh;
 }
+
+.nav-check:checked ~ .nav .nav-links {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: inline-block;
+}
+
 
 .nav-label {
   cursor: pointer;
   font-size: 1.25rem;
   display: inline-block;
   width: 25px;
-  position: absolute;
+  position: fixed;
   right: 1em;
-  top: 2em;
+  z-index: 2000;
 }
 
 .nav-open,
 .nav-close {
-  display: block;
+  display: inline-block;
   width: 100%;
 }
 
@@ -108,7 +122,7 @@ header {
 }
 
 .nav-check:checked ~ .nav-label .nav-close {
-  display: block;
+  display: inline-block;
 }
 
 a {
@@ -117,9 +131,33 @@ a {
   color: #fff;
 }
 
+
 .current {
   background-color: #000;
   color: #fff;
+}
+
+.banner {
+  border-color: #ccc;
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.banner-content {
+  border-color: #ccc;
+  border-width: medium;
+  border-style: solid;
+}
+
+.banner-picture{
+  background-image: url("../images/flowers.png");
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 800px;
 }
 
 .picture-footer {
@@ -129,14 +167,6 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: auto;
-}
-
-.picture-engineering {
-  background-image: url("{{site.baseurl}}/../images/lake.jpeg");
-
-  height: 200px;
-
-  background-color: #ccc;
 }
 
 .me {
@@ -292,8 +322,12 @@ footer {
     margin-left: 1em;
   }
 
-  .nav {
-    background-color: #fff;
+  .banner {
+    border-color: #ccc;
+    background-color: rgba(0, 0, 0, 0.6);
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
   }
 
 }
@@ -309,13 +343,8 @@ footer {
   }
 
   .nav {
-    position: fixed;
+    position: static;
     display: block;
-  }
-
-  h1 {
-    text-align: center;
-    margin-left: 0;
   }
 
   .me {
@@ -326,36 +355,12 @@ footer {
     text-align: right;
   }
 
-  .banner {
-    position: relative;
-    max-height: 500px;
-    overflow: hidden;
-  }
-
-  .banner-content {
-    width: 100%;
-    top: 10em;
-    background-color: #fff;
-  }
-
 }
 
 @media only screen and (min-width: 60em) {
 
   .me {
     width: 70%;
-  }
-
-  .banner {
-    position: relative;
-    max-height: 500px;
-  }
-
-  .banner-content {
-    position: absolute;
-    width: 50%;
-    top: 10em;
-    background-color: rgba(122, 122, 122, 0.6);
   }
 
 }

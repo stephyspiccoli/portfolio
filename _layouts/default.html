@@ -5,12 +5,8 @@
   <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
-  <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
-  <link href="{{site.baseurl}}/common/type.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/common/grid.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/common/modules.css" rel="stylesheet">
-  <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,17 +15,10 @@
   </header>
 
   {% if page.url == "/" %}
-  <section class="banner picture-banner" id="code">
-    <div>
-      <img class="img-flex" src="{{site.baseurl}}/../images/pattern.png" alt="">
-    </div>
-    <div class="text-center banner-square banner-content">
-      <div class="wrapper">
-        <h2 class="pad-t-1-2">Graphic Design</h2>
-        <div>
-          <a class="btn" href="#">View Work</a>
-        </div>
-      </div>
+  <section class="banner ">
+    <div class="text-center banner-content">
+      <h2 class="pad-t-1-2">Graphic Design</h2>
+      <p>Take a walk through my work</p>
     </div>
   </section>
 {% endif %}
