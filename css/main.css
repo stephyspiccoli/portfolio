@@ -170,8 +170,6 @@ span {
   height: 100vh;
 }
 
-
-
 footer {
   background-color: #FF9F1C;
 }
@@ -183,18 +181,6 @@ footer {
 }
 
 @media only screen and (min-width: 25em) {
-
-  header {
-    height: 300px;
-  }
-
-  nav {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 20%;
-    display: block;
-  }
 
 }
 
