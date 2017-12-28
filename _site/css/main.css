@@ -2,11 +2,6 @@ body {
   margin: 0;
 }
 
-h1:hover {
-  transition: all .4s linear;
-  color: #6a9a9e;
-}
-
 h2 {
   font-family: 'Quicksand', bold, sans-serif;
   color: #848484;
@@ -37,8 +32,15 @@ figcaption {
 }
 
 header {
+  height: 100vh;
+  background-color: #011627;
+}
+
+.header-2 {
   position: relative;
   text-align: center;
+  height: 250px;
+  background-color: #011627;
 }
 
 .header {
@@ -46,34 +48,38 @@ header {
 }
 
 .logo {
-  width: 40%;
+  width: 100%;
 }
 
-.nav {
-  border-top: #000 1px solid;
-  border-bottom: #000 1px solid;
+/* Navigation */
+
+nav {
+  height: 200px;
+}
+
+.navigation {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
 }
 
 .nav {
   list-style-type: none;
   display: none;
   position: absolute;
-  right: 0;
+  top: 7em;
   width: 100%;
-}
-
-li {
-  display: inline-block;
 }
 
 .nav a {
   text-decoration: none;
   padding: 0.5em;
-  color: #0a0e29;
+  color: #fff;
 }
 
 .nav a:hover {
-  color: #6a9a9e;
+  color: #FF9F1C;
 }
 
 .nav-check {
@@ -82,21 +88,19 @@ li {
 
 .nav-check:checked ~ .nav {
   display: block;
-  background-color: #ccc;
   z-index: 90;
-  top: 0;
-  height: 100vh;
+  -webkit-transition: all 0.3s ease;
 }
 
-.nav-check:checked ~ .nav .nav-links {
-  position: absolute;
-  width: 100%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.nav-check:checked ~ .nav-label {
+  cursor: pointer;
+  font-size: 1.25rem;
   display: block;
+  position: absolute;
+  width: 25px;
+  right: 50%;
+  z-index: 2000;
 }
-
 
 .nav-label {
   cursor: pointer;
@@ -104,7 +108,7 @@ li {
   display: block;
   position: absolute;
   width: 25px;
-  right: 1em;
+  right: 50%;
   z-index: 2000;
 }
 
@@ -132,26 +136,16 @@ a {
   color: #fff;
 }
 
+/* End of Navigation*/
+
 
 .current {
   background-color: #000;
   color: #fff;
 }
 
-.banner {
-  border-color: #ccc;
-  background-color: rgba(0, 0, 0, 0.6);
-  width: 50%;
-}
-
-.banner-content {
-  border-color: #ccc;
-  border-width: medium;
-  border-style: solid;
-}
-
 .banner-picture{
-  background-image: url("../images/flowers.png");
+  background-image: url("../images/background.jpg");
 
   background-attachment: fixed;
   background-position: center;
@@ -168,13 +162,10 @@ a {
   background-size: auto;
 }
 
-.me {
-  width: 80%;
-  display: block;
-}
-
 .about {
   background-color: transparent;
+  height: 100vh;
+  background-color:
 }
 
 .aboutme-p {
@@ -203,7 +194,7 @@ span {
 
 .btn-banner:hover {
   background-color: transparent;
-  border-color: #6a9a9e;
+  border-color: #FF9F1C;
   border-radius: 5px;
   border-bottom: transparent;
   border-top: transparent;
@@ -222,14 +213,6 @@ span {
   background-color: transparent;
   color: #fff;
   border-color: transparent;
-}
-
-.btn {
-  color: #000;
-  transition-duration: .25s;
-  transition-timing-function: linear;
-  border-color: transparent;
-  background-color: transparent;
 }
 
 .lines {
@@ -301,7 +284,7 @@ span {
 
 footer {
   vertical-align: middle;
-  background-color: #ccc;
+  background-color: #FF9F1C;
 }
 
 .footer-p {
@@ -316,29 +299,36 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-  h1 {
-    text-align: left;
-    margin-left: 1em;
+
+  .navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 25%;
+    left: 50%;
   }
 
-  .banner {
-    border-color: #ccc;
-    background-color: rgba(0, 0, 0, 0.6);
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+  header {
+    height: 300px;
+  }
+
+  .header-2 {
+    height: 200px;
+  }
+
+  .navigation p {
+    display: none;
   }
 
 }
 
 @media only screen and (min-width: 38em) {
 
-  h1 {
-    float: center;
-  }
-
   label.nav-label {
     display: none;
+  }
+
+  .navigation p {
+    display: block;
   }
 
   .nav {
@@ -346,24 +336,77 @@ footer {
     display: inline-block;
   }
 
-  .me {
-    width: 40%;
+  .navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 30%;
+    left: 50%;
   }
 
   .banner-btn {
     text-align: right;
   }
 
+  header {
+    height: 500px;
+  }
+
+  .header-2 {
+    height: 250px;
+  }
 }
 
 @media only screen and (min-width: 60em) {
 
-  .me {
-    width: 70%;
+  nav {
+    height: 200px;
   }
 
-  .nav-links li {
-    display: inline-block;
+  header {
+    height: 100vh;
   }
 
+  .navigation {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+  }
+
+}
+
+
+.thumbnail {
+  max-width: 100%;
+}
+/** LIGHTBOX MARKUP **/
+
+.lightbox {
+	/** Default lightbox to hidden */
+	display: none;
+
+	/** Position and style */
+	position: fixed;
+	z-index: 999;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.lightbox img {
+	/** Pad the lightbox image */
+	max-width: 100%;
+	max-height: 80%;
+	margin-top: 2%;
+}
+
+.lightbox:target {
+	/** Remove default browser outline */
+  outline: none;
+  min-height: 100%;
+	/** Unhide lightbox **/
+  display: block;
 }
