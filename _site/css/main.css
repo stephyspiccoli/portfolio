@@ -51,25 +51,18 @@ header {
   width: 100%;
 }
 
-/* Navigation */
-
 nav {
-  height: 200px;
-}
-
-.navigation {
   position: absolute;
   transform: translate(-50%, -50%);
-  top: 50%;
   left: 50%;
+  top: 50%;
 }
 
 .nav {
   list-style-type: none;
-  display: none;
-  position: absolute;
-  top: 7em;
   width: 100%;
+  border-top: 1px solid #FF9F1C;
+  border-bottom: 1px solid #FF9F1C;
 }
 
 .nav a {
@@ -82,94 +75,16 @@ nav {
   color: #FF9F1C;
 }
 
-.nav-check {
-  position: absolute;
-}
-
-.nav-check:checked ~ .nav {
-  display: block;
-  z-index: 90;
-  -webkit-transition: all 0.3s ease;
-}
-
-.nav-check:checked ~ .nav-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-  display: block;
-  position: absolute;
-  width: 25px;
-  right: 50%;
-  z-index: 2000;
-}
-
-.nav-label {
-  cursor: pointer;
-  font-size: 1.25rem;
-  display: block;
-  position: absolute;
-  width: 25px;
-  right: 50%;
-  z-index: 2000;
-}
-
-.nav-open,
-.nav-close {
-  display: block;
-  width: 100%;
-}
-
-.nav-close {
-  display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-open {
-  display: none;
-}
-
-.nav-check:checked ~ .nav-label .nav-close {
-  display: inline-block;
-}
-
 a {
   font-family: 'Quicksand', bold, sans-serif;
   text-decoration: none;
   color: #fff;
 }
 
-/* End of Navigation*/
-
 
 .current {
   background-color: #000;
   color: #fff;
-}
-
-.banner-picture{
-  background-image: url("../images/background.jpg");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
-}
-
-.picture-footer {
-  background-image: url("../images/colour.jpeg");
-
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: auto;
-}
-
-.about {
-  background-color: transparent;
-  height: 100vh;
-  background-color:
-}
-
-.aboutme-p {
-  vertical-align: middle;
 }
 
 .line1 {
@@ -203,6 +118,7 @@ span {
 
 .btn {
   color: #000;
+    font-family: 'Quicksand', sans-serif;
   transition-duration: .25s;
   transition-timing-function: linear;
   border-color: transparent;
@@ -282,8 +198,11 @@ span {
   -ms-transform: translate(-50%, -50%);
 }
 
+.about {
+  height: 100vh;
+}
+
 footer {
-  vertical-align: middle;
   background-color: #FF9F1C;
 }
 
@@ -299,24 +218,19 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-
-  .navigation {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 25%;
-    left: 50%;
+  .header-2 {
+    height: 200px;
   }
 
   header {
     height: 300px;
   }
 
-  .header-2 {
-    height: 200px;
-  }
-
-  .navigation p {
-    display: none;
+  nav {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 20%;
   }
 
 }
@@ -327,28 +241,8 @@ footer {
     display: none;
   }
 
-  .navigation p {
-    display: block;
-  }
-
-  .nav {
-    position: static;
-    display: inline-block;
-  }
-
-  .navigation {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 30%;
-    left: 50%;
-  }
-
   .banner-btn {
     text-align: right;
-  }
-
-  header {
-    height: 500px;
   }
 
   .header-2 {
@@ -358,23 +252,17 @@ footer {
 
 @media only screen and (min-width: 60em) {
 
-  nav {
-    height: 200px;
-  }
-
   header {
     height: 100vh;
   }
 
-  .navigation {
+  nav {
     position: absolute;
     transform: translate(-50%, -50%);
-    top: 50%;
     left: 50%;
+    top: 50%;
   }
-
 }
-
 
 .thumbnail {
   max-width: 100%;
