@@ -4,7 +4,7 @@ body {
 
 h2 {
   font-family: 'Quicksand', bold, sans-serif;
-  color: #848484;
+  color: #011627;
 }
 
 .about-h2, .p-h2 {
@@ -13,7 +13,7 @@ h2 {
 
 h3 {
   font-family: 'Quicksand', bold, sans-serif;
-  color: #848484;
+  color: #011627;
 }
 
 p {
@@ -26,20 +26,19 @@ figcaption {
   color: #ccc;
 }
 
+a {
+  font-family: 'Quicksand', bold, sans-serif;
+}
+
 .current {
   background-color: #000531;
   color: #fff;
 }
 
+/* Navigation */
+
 header {
   height: 100vh;
-  background-color: #011627;
-}
-
-.header-2 {
-  position: relative;
-  text-align: center;
-  height: 250px;
   background-color: #011627;
 }
 
@@ -51,6 +50,10 @@ header {
   width: 100%;
 }
 
+ul li {
+  padding: 0.8em;
+}
+
 nav {
   position: absolute;
   transform: translate(-50%, -50%);
@@ -59,28 +62,37 @@ nav {
 }
 
 .nav {
-  list-style-type: none;
+  display: block;
   width: 100%;
   border-top: 1px solid #FF9F1C;
   border-bottom: 1px solid #FF9F1C;
+  padding-top: 0.9em;
 }
 
 .nav a {
   text-decoration: none;
+  padding-right: 0.9em;
+  padding-left: 0.9em;
   padding: 0.5em;
   color: #fff;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+    transition-duration: .25s;
+
 }
 
 .nav a:hover {
   color: #FF9F1C;
+  background-color: transparent;
+  border-color: #FF9F1C;
+  border-radius: 5px;
+  border-bottom: transparent;
+  border-top: transparent;
+  border-right: 3px solid #FF9F1C;
+  border-left: 3px solid #FF9F1C;
 }
 
-a {
-  font-family: 'Quicksand', bold, sans-serif;
-  text-decoration: none;
-  color: #fff;
-}
-
+/* End of Navigation */
 
 .current {
   background-color: #000;
@@ -100,27 +112,10 @@ span {
   border-color: transparent;
 }
 
-
-.btn-banner {
-  background-color: transparent;
-  border-color: transparent;
-  color: #fff;
-}
-
-.btn-banner:hover {
-  background-color: transparent;
-  border-color: #FF9F1C;
-  border-radius: 5px;
-  border-bottom: transparent;
-  border-top: transparent;
-  transition: all .5s linear;
-}
-
 .btn {
   color: #000;
-    font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif;
   transition-duration: .25s;
-  transition-timing-function: linear;
   border-color: transparent;
   background-color: transparent;
 }
@@ -129,33 +124,6 @@ span {
   background-color: transparent;
   color: #fff;
   border-color: transparent;
-}
-
-.lines {
-  line-height: 0.5;
-  text-align: center;
-}
-.lines span {
-  display: inline-block;
-  position: relative;
-}
-.lines span:before,
-.lines span:after {
-  content: "";
-  position: absolute;
-  height: 10px;
-  border-bottom: 1px solid #000;
-  border-top: 1px solid #000;
-  top: 3px;
-  width: 800px;
-}
-.lines span:before {
-  right: 100%;
-  margin-right: 15px;
-}
-.lines span:after {
-  left: 100%;
-  margin-left: 15px;
 }
 
 .social-media {
@@ -218,10 +186,6 @@ footer {
 
 @media only screen and (min-width: 25em) {
 
-  .header-2 {
-    height: 200px;
-  }
-
   header {
     height: 300px;
   }
@@ -231,6 +195,7 @@ footer {
     transform: translate(-50%, -50%);
     left: 50%;
     top: 20%;
+    display: block;
   }
 
 }
@@ -243,10 +208,6 @@ footer {
 
   .banner-btn {
     text-align: right;
-  }
-
-  .header-2 {
-    height: 250px;
   }
 }
 
