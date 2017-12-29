@@ -24,10 +24,25 @@ p {
 figcaption {
   font-style: italic;
   color: #ccc;
+  text-align: center;
 }
 
 a {
   font-family: 'Quicksand', bold, sans-serif;
+  color: #FF9F1C;
+  text-decoration: none;
+}
+
+a:hover {
+  font-family: 'Quicksand', bold, sans-serif;
+  color: #fff;
+  transition-duration: .25s;
+}
+
+a:active, a:focus {
+  outline: 0;
+  border: none;
+  -moz-outline-style: none
 }
 
 .current {
@@ -77,7 +92,7 @@ nav {
   color: #fff;
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
-    transition-duration: .25s;
+  transition-duration: .25s;
 
 }
 
@@ -180,6 +195,61 @@ footer {
   background-color: #FF9F1C;
 }
 
+/* Lightbox */
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+}
+
+.lightboxcontent a {
+  font-family: 'Quicksand', bold, sans-serif;
+  padding: 0.8em;
+  color: #FF9F1C;
+  text-decoration: none;
+}
+
+.lightboxcontent a:hover {
+  font-family: 'Quicksand', bold, sans-serif;
+  color: #fff;
+  transition-duration: .25s;
+}
+
+.lightboxcontent {
+  z-index: 1000;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+
+  /** Unhide lightbox **/
+  display: block;
+}
+
+/* Lightbox End */
+
 @media only screen and (min-width: 25em) {
 
 }
@@ -207,39 +277,4 @@ footer {
     left: 50%;
     top: 50%;
   }
-}
-
-.thumbnail {
-  max-width: 100%;
-}
-/** LIGHTBOX MARKUP **/
-
-.lightbox {
-	/** Default lightbox to hidden */
-	display: none;
-
-	/** Position and style */
-	position: fixed;
-	z-index: 999;
-	width: 100%;
-	height: 100%;
-	text-align: center;
-	top: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-}
-
-.lightbox img {
-	/** Pad the lightbox image */
-	max-width: 100%;
-	max-height: 80%;
-	margin-top: 2%;
-}
-
-.lightbox:target {
-	/** Remove default browser outline */
-  outline: none;
-  min-height: 100%;
-	/** Unhide lightbox **/
-  display: block;
 }
