@@ -2,6 +2,10 @@ body {
   margin: 0;
 }
 
+h1 {
+  color: #fff;
+}
+
 h2 {
   font-family: 'Quicksand', bold, sans-serif;
   color: #011627;
@@ -21,15 +25,29 @@ p {
   color: #ccc;
 }
 
+.banner-p {
+  color: #011627;
+}
+
+.about-p {
+  color: #011627;
+}
+
 figcaption {
   font-style: italic;
   color: #ccc;
   text-align: center;
 }
 
+.img-container {
+  padding-top: 2em;
+  padding-right: 2em;
+  padding-left: 2em;
+}
+
 a {
   font-family: 'Quicksand', bold, sans-serif;
-  color: #FF9F1C;
+  color: #011627;
   text-decoration: none;
 }
 
@@ -45,16 +63,11 @@ a:active, a:focus {
   -moz-outline-style: none
 }
 
-.current {
-  background-color: #000531;
-  color: #fff;
-}
-
 /* Navigation */
 
 header {
   height: 100vh;
-  background-color: #011627;
+  background-color: #F7F1E5;
 }
 
 .header {
@@ -79,8 +92,8 @@ nav {
 .nav {
   display: block;
   width: 100%;
-  border-top: 1px solid #FF9F1C;
-  border-bottom: 1px solid #FF9F1C;
+  border-top: 2px solid #FAC67A;
+  border-bottom: 2px solid #FAC67A;
   padding-top: 0.9em;
 }
 
@@ -89,7 +102,7 @@ nav {
   padding-right: 0.9em;
   padding-left: 0.9em;
   padding: 0.5em;
-  color: #fff;
+  color: #011627;
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
   transition-duration: .25s;
@@ -160,7 +173,7 @@ span {
   width: 100%;
   opacity: 0;
   transition: .5s ease;
-  background-color: #000;
+  background-color: #F7F1E5;
 }
 
 .subtitle-get {
@@ -168,11 +181,11 @@ span {
 }
 
 .container:hover .overlay {
-  opacity: 0.80;
+  opacity: 0.90;
 }
 
 .text {
-  color: white;
+  color: #011627;
   font-size: 20px;
   position: absolute;
   top: 50%;
@@ -181,9 +194,28 @@ span {
   -ms-transform: translate(-50%, -50%);
 }
 
+/* About section */
+
+.rectangle {
+  position: absolute;
+  transform: translate(50%);
+  right: 70%;
+}
+
+.about-content {
+  position: absolute;
+  transform: translate(50%);
+  right: 40%;
+  z-index: 1000;
+  margin-top: 6em;
+  border-left: 2px solid #011627;
+}
+
 .about {
   height: 100vh;
 }
+
+/* About section end */
 
 footer {
   background-color: #FF9F1C;
@@ -194,6 +226,25 @@ footer {
   border-top: 2px solid #fff;
   background-color: #FF9F1C;
 }
+
+/* Video */
+
+.videos {
+  margin: 5em;
+}
+
+.embed {
+}
+
+.embed--4by3 {
+}
+
+.embed__item {
+
+  }
+
+/* End of Video */
+
 
 /* Lightbox */
 
@@ -249,6 +300,25 @@ footer {
 }
 
 /* Lightbox End */
+
+/* 404 */
+
+.error-title {
+  font-size: 10em;
+}
+
+.error-content {
+  position: absolute;
+  transform: translate(50%, 50%);
+  bottom: 50%;
+  right: 50%;
+  width: 100%;
+  border-top: 1px solid #FF9F1C;
+  border-bottom: 1px solid #FF9F1C;
+  padding-top: 5em;
+}
+
+/* End of 404 */
 
 @media only screen and (min-width: 25em) {
 

@@ -1,27 +1,40 @@
+---
+permalink: 404.html
+---
+
 <!DOCTYPE html>
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
   <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link rel="shortcut icon" href="images/favicon.png">
   <meta name="description" content="A portfolio website that displays some of my best graphic design work">
   <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500,700" rel="stylesheet">
   <link href="{{site.baseurl}}/css/site.css" rel="stylesheet">
 </head>
 <body>
 
-  <header class="push-1-4" role="navigation" id="nav">
-    {% include nav.html %}
+  <header class="push-0" role="navigation" id="nav">
+
+    <div class="text-center error-content">
+      <h1 class="push-2 error-title">404</h1>
+      <p class="pad-t-1-2">It appears the Graphic designer in charge of this website is lost somewhere</p>
+
+      </div>
+
+    </div>
   </header>
 
-  <main class="pad-t-1-4">
-    {{content}}
-  </main>
+
 
   <div class="push-0">
-    {% include footer.html %}
+    <ul class="list-group-inline">
+      <li><a class="btn-banner" href="{{site.baseurl}}/#portfolio">Portfolio</a></li>
+      <li><a class="btn-banner" href="{{site.baseurl}}/#about">About</a></li>
+      <li><a class="btn-banner" href="{{site.baseurl}}/#footer">Contact</a></li>
+    </ul>
   </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/2.1.2/jquery.scrollTo.min.js"></script>
