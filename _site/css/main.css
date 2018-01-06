@@ -246,6 +246,13 @@ span {
   background-color: transparent;
 }
 
+.btn:hover {
+  color: #011627;
+  font-family: 'Quicksand', sans-serif;
+  transition-duration: .25s;
+  border-color: transparent;
+  background-color: transparent;
+}
 
 .btn-social:hover {
   background-color: transparent;
