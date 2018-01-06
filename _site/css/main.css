@@ -246,14 +246,6 @@ span {
   background-color: transparent;
 }
 
-.btn:hover {
-  color: #011627;
-  font-family: 'Quicksand', sans-serif;
-  transition-duration: .25s;
-  border-color: transparent;
-  background-color: transparent;
-}
-
 .btn-social:hover {
   background-color: transparent;
   color: #fff;
@@ -318,6 +310,18 @@ span {
 .about-p {
   color: #011627;
   border-left: 2px solid #fac67a;
+}
+
+.link-portfolio a {
+  color: #011627;
+  border: 3px solid #FF9F1C;
+  padding: 0.5em;
+}
+
+.link-portfolio a:hover {
+  color: #FF9F1C;
+  border: 3px solid #FF9F1C;
+  padding: 0.7em;
 }
 
 /* About section end */
