@@ -1,3 +1,4 @@
+{% if page.url == '/' %}
 <nav class="text-center">
 <div class="text-center navigation">
   <a href="{{site.baseurl}}/">
@@ -11,3 +12,16 @@
   </ul>
 </nav>
 </div>
+{% else %}
+<div class="nav-2-2 text-center">
+<div class="text-center">
+  <a href="{{site.baseurl}}/">
+    <img class="logo-2" src="{{site.baseurl}}/images/me-logo.svg" alt="">
+  </a>
+  <ul class="island-1-2 list-group-inline nav-2">
+    <li><a class="btn-banner" href="{{site.baseurl}}/#portfolio">Portfolio</a></li>
+    <li><a class="btn-banner" href="{{site.baseurl}}/#about">About</a></li>
+    <li><a class="btn-banner" href="{{site.baseurl}}/#footer">Contact</a></li>
+  </ul>
+</div>
+{% endif %}

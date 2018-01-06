@@ -49,6 +49,7 @@ a {
   font-family: 'Quicksand', bold, sans-serif;
   color: #011627;
   text-decoration: none;
+
 }
 
 a:hover {
@@ -74,7 +75,15 @@ header {
   background-color: #fff;
 }
 
+.header-2 {
+  height: 250px;
+}
+
 .logo {
+  width: 100%;
+}
+
+.logo-2 {
   width: 100%;
 }
 
@@ -87,6 +96,40 @@ nav {
   transform: translate(-50%, -50%);
   left: 50%;
   top: 50%;
+}
+
+.nav-2-2 {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 25%;
+  left: 50%;
+}
+
+.nav-2 {
+ display: inline-block;
+ float: center;
+}
+
+.nav-2 a {
+  padding-right: 0.9em;
+  padding-left: 0.9em;
+  padding: 0.5em;
+  text-decoration: none;
+  color: #011627;
+  border-right: 3px solid transparent;
+  border-left: 3px solid transparent;
+  transition-duration: .25s;
+}
+
+.nav-2 a:hover {
+  color: #FF9F1C;
+  background-color: transparent;
+  border-color: #FF9F1C;
+  border-radius: 5px;
+  border-bottom: transparent;
+  border-top: transparent;
+  border-right: 3px solid #FF9F1C;
+  border-left: 3px solid #FF9F1C;
 }
 
 .nav {
@@ -106,7 +149,6 @@ nav {
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
   transition-duration: .25s;
-
 }
 
 .nav a:hover {
@@ -118,6 +160,33 @@ nav {
   border-top: transparent;
   border-right: 3px solid #FF9F1C;
   border-left: 3px solid #FF9F1C;
+}
+
+.nav-2 {
+  height: 200px;
+}
+
+.about-content a {
+  text-decoration: none;
+  padding-right: 0.9em;
+  padding-left: 0.9em;
+  padding: 0.8em;
+  color: #FF9F1C;
+  border: 3px solid #FF9F1C;
+  transition-duration: .25s;
+}
+
+.about-content a:hover {
+  text-decoration: none;
+  padding-right: 0.9em;
+  padding-left: 0.9em;
+  padding: 0.8em;
+  color: #011627;
+  border: 3px solid #011627;
+  transition-duration: .25s;
+}
+.link-portfolio {
+  padding: 0.8em;
 }
 
 /* End of Navigation */
@@ -141,12 +210,13 @@ span {
 }
 
 .btn {
-  color: #000;
+  color: #011627;
   font-family: 'Quicksand', sans-serif;
   transition-duration: .25s;
   border-color: transparent;
   background-color: transparent;
 }
+
 
 .btn-social:hover {
   background-color: transparent;
@@ -207,7 +277,7 @@ span {
   transform: translate(50%);
   right: 40%;
   z-index: 1000;
-  margin-top: 6em;
+  margin-top: 8em;
   border-left: 2px solid #011627;
 }
 
@@ -218,7 +288,7 @@ span {
 /* About section end */
 
 footer {
-  background-color: #FF9F1C;
+  background-color: #011627;
 }
 
 .footer-p {
@@ -321,6 +391,7 @@ footer {
 /* End of 404 */
 
 @media only screen and (min-width: 25em) {
+
 
 }
 
