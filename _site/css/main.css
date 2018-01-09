@@ -21,6 +21,9 @@
 
 body {
   margin: 0;
+  font-family: omnes-pro, sans-serif;
+font-style: normal;
+font-weight: 100;
 }
 
 h1 {
@@ -35,13 +38,13 @@ h2 {
   color: #011627;
 }
 
-.about-h2, .p-h2 {
-  color: #fff;
-}
-
 h3 {
   font-family: 'Quicksand', bold, sans-serif;
   color: #011627;
+}
+
+.overview h3 {
+  color: #fff;
 }
 
 h4 {
@@ -50,17 +53,23 @@ h4 {
   margin-bottom: 0;
 }
 
-.get {
-  color: #fff;
-}
-
 p {
-  font-family: 'Quicksand', sans-serif;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
   color: #ccc;
 }
 
-.banner-p {
-  color: #011627;
+.overview p {
+  color: #fff;
+}
+
+.overview {
+    background-color: #011627;
+}
+
+.get {
+  color: #fff;
 }
 
 figcaption {
@@ -69,38 +78,16 @@ figcaption {
   text-align: center;
 }
 
-.img-container {
-  padding-top: 2em;
-  padding-right: 2em;
-  padding-left: 2em;
-}
-
-footer a {
+span {
   font-family: 'Quicksand', bold, sans-serif;
+  border-color: transparent;
   color: #fff;
-  text-decoration: none;
-  border-bottom: 1px #fff transparent;
-  border-top: 1px #fff transparent;
-  border-right: 1px #fff solid;
-  border-left: 1px #fff solid;
-
-}
-
-footer a:hover {
-  font-family: 'Quicksand', bold, sans-serif;
-  color: #fff;
-  transition-duration: .25s;
-  border-bottom: 1px #fff solid;
-  border-top: 1px #fff solid;
-  border-right: 1px #fff solid;
-  border-left: 1px #fff solid;
 }
 
 a {
   font-family: 'Quicksand', bold, sans-serif;
   color: #fff;
   text-decoration: none;
-
 }
 
 a:hover {
@@ -114,7 +101,21 @@ a:active, a:focus {
   -moz-outline-style: none
 }
 
-/* Navigation */
+.btn {
+  color: #011627;
+  font-family: 'Quicksand', sans-serif;
+  transition-duration: .25s;
+  border-color: transparent;
+  background-color: transparent;
+}
+
+.btn-social:hover {
+  background-color: transparent;
+  color: #fff;
+  border-color: transparent;
+}
+
+/* Navigation/Banner */
 
 header {
   height: 100vh;
@@ -217,7 +218,13 @@ nav {
   padding: 0.8em;
 }
 
-/* End of Navigation */
+.banner-p {
+  color: #011627;
+}
+
+/* End of Navigation/Banner */
+
+/* Boxes of projects */
 
 .current {
   background-color: #000;
@@ -230,26 +237,6 @@ nav {
   border-top: 1px solid #ccc;
   top: 3px;
   line-height: 0.5;
-}
-
-span {
-  font-family: 'Quicksand', bold, sans-serif;
-  border-color: transparent;
-  color: #fff;
-}
-
-.btn {
-  color: #011627;
-  font-family: 'Quicksand', sans-serif;
-  transition-duration: .25s;
-  border-color: transparent;
-  background-color: transparent;
-}
-
-.btn-social:hover {
-  background-color: transparent;
-  color: #fff;
-  border-color: transparent;
 }
 
 .social-media {
@@ -292,11 +279,17 @@ span {
   -ms-transform: translate(-50%, -50%);
 }
 
+/* End of Boxes of projects */
+
 /* About section */
 
 .me {
   padding-left: 15em;
   padding-right: 15em;
+}
+
+.about-h2, .p-h2 {
+  color: #fff;
 }
 
 .about {
@@ -326,32 +319,41 @@ span {
 
 /* About section end */
 
-footer {
-  background-color: #011627;
-}
+  footer {
+    background-color: #011627;
+  }
 
-.footer-p {
-  color: #fff;
-  border-top: 2px solid #fff;
-  background-color: #011627;
-}
+  .footer-p {
+    color: #fff;
+    border-top: 2px solid #fff;
+    background-color: #011627;
+  }
+
+  footer a {
+    font-family: 'Quicksand', bold, sans-serif;
+    color: #fff;
+    text-decoration: none;
+    border-bottom: 1px #fff transparent;
+    border-top: 1px #fff transparent;
+    border-right: 1px #fff solid;
+    border-left: 1px #fff solid;
+  }
+
+  footer a:hover {
+    font-family: 'Quicksand', bold, sans-serif;
+    color: #fff;
+    transition-duration: .25s;
+    border-bottom: 1px #fff solid;
+    border-top: 1px #fff solid;
+    border-right: 1px #fff solid;
+    border-left: 1px #fff solid;
+  }
 
 /* Video */
 
 .videos {
   margin: 5em;
 }
-
-.embed {
-}
-
-.embed--4by3 {
-}
-
-.embed__item {
-
-  }
-
 /* End of Video */
 
 
@@ -410,6 +412,7 @@ footer {
 
 /* Lightbox End */
 
+
 /* 404 */
 
 .error-title {
@@ -458,13 +461,6 @@ footer {
 
   header {
     height: 100vh;
-  }
-
-  nav {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
   }
 
   .me {
