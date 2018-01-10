@@ -106,6 +106,10 @@ a:hover {
   color: #fff;
 }
 
+a:focus {
+  outline: 3px solid #011627;
+}
+
 .btn {
   color: #011627;
   font-family: omnes-pro, sans-serif;
