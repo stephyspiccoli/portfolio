@@ -159,10 +159,11 @@ nav {
   padding: 0.5em;
   border-right: 3px solid transparent;
   border-left: 3px solid transparent;
+  text-decoration: none;
 }
 
 .nav-2 a:hover {
-  color: #011627;
+  color: #FF9F1C;
   border-radius: 5px;
   border-bottom: transparent;
   border-top: transparent;
@@ -238,8 +239,8 @@ nav {
 
 .line1 {
   height: 10px;
-  border-bottom: 1px solid #ccc;
-  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #011627;
+  border-top: 1px solid #011627;
   top: 3px;
   line-height: 0.5;
 }
