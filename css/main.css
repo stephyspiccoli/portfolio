@@ -11,8 +11,9 @@
   cursor: pointer;
   padding: 15px;
   border-radius: 10px;
-  font-family: 'Quicksand', bold, sans-serif;
-  font-weight: 400;
+  font-family: omnes-pro, sans-serif;
+  font-style: bold;
+  font-weight: 100;
 }
 
 #myBtn:hover {
@@ -22,8 +23,8 @@
 body {
   margin: 0;
   font-family: omnes-pro, sans-serif;
-font-style: normal;
-font-weight: 100;
+  font-style: normal;
+  font-weight: 100;
 }
 
 h1 {
@@ -39,8 +40,9 @@ h2 {
 }
 
 h3 {
-  font-family: 'Quicksand', bold, sans-serif;
-  color: #011627;
+  font-family: omnes-pro, sans-serif;
+  font-style: bold;
+  font-weight: 100;
 }
 
 .overview h3 {
@@ -48,7 +50,9 @@ h3 {
 }
 
 h4 {
-  font-family: 'Quicksand', bold, sans-serif;
+  font-family: omnes-pro, sans-serif;
+  font-style: bold;
+  font-weight: 100;
   color: #fac67a;
   margin-bottom: 0;
 }
@@ -79,19 +83,18 @@ figcaption {
 }
 
 span {
-  font-family: 'Quicksand', bold, sans-serif;
-  border-color: transparent;
-  color: #fff;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 a {
-  font-family: 'Quicksand', bold, sans-serif;
-  color: #fff;
-  text-decoration: none;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
 }
 
 a:hover {
-  font-family: 'Quicksand', bold, sans-serif;
   color: #fff;
 }
 
@@ -103,7 +106,9 @@ a:active, a:focus {
 
 .btn {
   color: #011627;
-  font-family: 'Quicksand', sans-serif;
+  font-family: omnes-pro, sans-serif;
+  font-style: normal;
+  font-weight: 100;
   transition-duration: .25s;
   border-color: transparent;
   background-color: transparent;
