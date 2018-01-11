@@ -298,11 +298,6 @@ nav {
 
 /* About section */
 
-.me {
-  padding-left: 15em;
-  padding-right: 15em;
-}
-
 .about-h2, .p-h2 {
   color: #fff;
 }
@@ -362,6 +357,11 @@ nav {
     border-top: 2px #fff solid;
     border-right: 2px #fff solid;
     border-left: 2px #fff solid;
+  }
+
+  .me {
+    width: 50%;
+    margin: 0 auto 0 auto;
   }
 
 /* Video */
