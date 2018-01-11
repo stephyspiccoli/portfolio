@@ -329,40 +329,40 @@ nav {
 
 /* About section end */
 
-  footer {
-    background-color: #011627;
-  }
+footer {
+  background-color: #011627;
+}
 
-  .footer-p {
-    color: #fff;
-    border-top: 2px solid #fff;
-    background-color: #011627;
-  }
+.footer-p {
+  color: #fff;
+  border-top: 2px solid #fff;
+  background-color: #011627;
+}
 
-  footer a {
-    font-family: 'Quicksand', bold, sans-serif;
-    color: #fff;
-    text-decoration: none;
-    border-bottom: 2px #fff transparent;
-    border-top: 2px #fff transparent;
-    border-right: 2px #fff solid;
-    border-left: 2px #fff solid;
-  }
+footer a {
+  font-family: 'Quicksand', bold, sans-serif;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 2px #fff transparent;
+  border-top: 2px #fff transparent;
+  border-right: 2px #fff solid;
+  border-left: 2px #fff solid;
+}
 
-  footer a:hover {
-    font-family: 'Quicksand', bold, sans-serif;
-    color: #fff;
-    transition-duration: .25s;
-    border-bottom: 2px #fff solid;
-    border-top: 2px #fff solid;
-    border-right: 2px #fff solid;
-    border-left: 2px #fff solid;
-  }
+footer a:hover {
+  font-family: 'Quicksand', bold, sans-serif;
+  color: #fff;
+  transition-duration: .25s;
+  border-bottom: 2px #fff solid;
+  border-top: 2px #fff solid;
+  border-right: 2px #fff solid;
+  border-left: 2px #fff solid;
+}
 
-  .me {
-    width: 50%;
-    margin: 0 auto 0 auto;
-  }
+.me {
+  width: 50%;
+  margin: 0 auto 0 auto;
+}
 
 /* Video */
 
@@ -527,6 +527,10 @@ nav {
     transition: .3s ease;
   }
 
+  .me {
+    width: 100%;
+  }
+
 }
 
 @media only screen and (min-width: 38em) {
@@ -542,6 +546,10 @@ nav {
   h1 {
     font-size: 3em;
     transition: .3s ease;
+  }
+
+  .me {
+    width: 50%;
   }
 }
 
