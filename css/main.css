@@ -28,7 +28,10 @@ body {
 }
 
 h1 {
-  color: #fff;
+  color: #081f56;
+  font-family: relation-two, sans-serif;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h2 {
@@ -36,7 +39,7 @@ h2 {
   font-style: normal;
   font-weight: 400;
   font-size: 4em;
-  color: #011627;
+  color: #081f56;
 }
 
 h3 {
@@ -519,6 +522,10 @@ nav {
 
 @media only screen and (min-width: 25em) {
 
+  h1 {
+    font-size: 2em;
+    transition: .3s ease;
+  }
 
 }
 
@@ -531,6 +538,11 @@ nav {
   .banner-btn {
     text-align: right;
   }
+
+  h1 {
+    font-size: 3em;
+    transition: .3s ease;
+  }
 }
 
 @media only screen and (min-width: 60em) {
@@ -538,8 +550,19 @@ nav {
   header {
     height: 100vh;
   }
+
+  h1 {
+    font-size: 4em;
+    transition: .3s ease;
+  }
 }
 
 @media only screen and (min-width: 90em) {
+
+  h1 {
+    font-size: 6em;
+    margin-bottom: .4em;
+    transition: .3s ease;
+  }
 
 }
