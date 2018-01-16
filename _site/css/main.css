@@ -38,8 +38,9 @@ h2 {
   font-family: relation-two, sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 4em;
+  font-size: 2.5em;
   color: #081f56;
+  line-height: 1em;
 }
 
 h3 {
@@ -99,6 +100,22 @@ a {
   font-family: omnes-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
+  text-decoration: none;
+}
+
+.patternlibrary a {
+  padding: .5em;
+  color: #011627;
+  border: 2px solid #FF9F1C;
+  border-radius: 10px;
+  transition: .2s;
+}
+
+.patternlibrary a:hover {
+  padding: .5em;
+  color: #FF9F1C;
+  border: 2px solid #011627;
+  border-radius: 10px;
 }
 
 .grid {
