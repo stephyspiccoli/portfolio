@@ -25,6 +25,11 @@ body {
   font-family: omnes-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
+  overflow-x: hidden;
+}
+
+html {
+  overflow-x: hidden;
 }
 
 h1 {
