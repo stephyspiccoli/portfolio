@@ -346,6 +346,28 @@ nav {
 
 /* About section end */
 
+.parallax-cars {
+    background-image: url("../../images/c&c-car.jpg");
+
+    height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-cars-2 {
+    background-image: url("../../images/c&c-car2.jpg");
+
+    height: 600px;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 footer {
   background-color: #011627;
 }
@@ -537,6 +559,19 @@ footer a:hover {
 
 }
 
+@media only screen and (min-width: 320px) {
+
+  .parallax-cars {
+    height: 300px;
+    background-attachment: scroll;
+  }
+
+  .parallax-cars-2 {
+    height: 300px;
+    background-attachment: scroll;
+  }
+}
+
 @media only screen and (min-width: 25em) {
 
   h1 {
@@ -567,6 +602,28 @@ footer a:hover {
 
   .me {
     width: 50%;
+  }
+
+  .parallax-cars {
+      background-image: url("../../images/c&c-car.jpg");
+
+      height: 600px;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+  }
+
+  .parallax-cars-2 {
+      background-image: url("../../images/c&c-car2.jpg");
+
+      height: 600px;
+
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
   }
 }
 
