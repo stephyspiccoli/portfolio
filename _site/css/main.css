@@ -70,7 +70,7 @@ p {
   font-family: omnes-pro, sans-serif;
   font-style: normal;
   font-weight: 100;
-  color: #ccc;
+  color: #000;
 }
 
 .overview p {
@@ -123,6 +123,10 @@ a {
   border-radius: 10px;
 }
 
+img {
+  display: block;
+}
+
 .grid {
   margin: 0;
 }
@@ -172,6 +176,9 @@ header {
 
 .logo-2 {
   width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 ul li {
@@ -404,7 +411,7 @@ footer a:hover {
 }
 
 .me {
-  width: 50%;
+  width: 40%;
   margin: 0 auto 0 auto;
 }
 
@@ -479,6 +486,47 @@ footer a:hover {
 }
 
 /* Lightbox End */
+
+/* Onrecycle page */
+
+.recycle h2 {
+  color: #87C664;
+}
+
+.overview-recycle {
+  background-color: #87C664;
+  color: white;
+}
+
+.overview-recycle p {
+  color: white;
+}
+
+.recycle-banner {
+  width: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.recycle-logo-banner {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 65%;
+  top: 40%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.or img {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* End Onrecycle page */
 
 
 /* 404 */
