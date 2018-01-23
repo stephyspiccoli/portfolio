@@ -82,7 +82,7 @@ p {
 }
 
 .sketches img {
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 .get {
@@ -335,10 +335,6 @@ nav {
   background-color: #F7F1E5;
 }
 
-.about-content {
-  margin: 1em;
-}
-
 .about-p {
   color: #011627;
   border-left: 2px solid #fac67a;
@@ -524,6 +520,20 @@ footer a:hover {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+.app-screen {
+  background-color: #87C664;
+}
+
+.button-onrecycle a {
+  color: #87C664;
+  border: 2px solid #87C664;
+}
+
+.button-onrecycle a:hover {
+  color: #018242;
+  border: 2px solid #018242;
 }
 
 /* End Onrecycle page */
