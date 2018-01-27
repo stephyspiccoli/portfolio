@@ -365,17 +365,6 @@ nav {
     background-size: cover;
 }
 
-.parallax-cars-2 {
-    background-image: url("../../images/c&c-car2.jpg");
-
-    height: 600px;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: auto;
-}
-
 footer {
   background-color: #011627;
 }
@@ -537,6 +526,25 @@ footer a:hover {
 }
 
 /* End Onrecycle page */
+
+
+
+/* Cars and Coffee */
+
+.carsandcoffee {
+  background-color: #000;
+}
+
+.carsandcoffee p {
+  color: #fff;
+}
+
+.carsandcoffee h3 {
+  color: #fff;
+}
+
+/* End Cars and Coffee */
+
 
 
 /* 404 */
